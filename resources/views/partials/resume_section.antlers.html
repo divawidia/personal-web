@@ -1,0 +1,90 @@
+<!-- Section - Resume -->
+<section class="lui-section lui-gradient-bottom" id="resume-section">
+    <!-- Heading -->
+    <div class="lui-heading">
+        <div class="container">
+            <div class="m-titles align-center">
+                <h2 class="m-title splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
+                    <span>{{ heading_title }}</span>
+                </h2>
+                <div class="m-subtitle splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
+                    <span>{{ heading_subtitle }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- History -->
+    <div class="v-line v-line-left">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <h5 class="history-title scrolla-element-anim-1 scroll-animate" data-animate="active">
+                        <span>Education</span>
+                    </h5>
+                    <div class="history-items">
+                        {{ educations }}
+                            <div class="history-item lui-collapse-item py-4 {{ if first }} opened {{ /if }} scrolla-element-anim-1 scroll-animate" data-animate="active">
+                                <div class="row align-items-center px-3">
+                                    <h6 class="col-md-6 name lui-collapse-btn py-2 px-3 px-md-4 {{ if first }} active {{ /if }}">
+                                        <span>{{ school_name }}</span>
+                                    </h6>
+                                    <span class="col-md-6 text-md-end px-3 px-md-5">{{ location }}</span>
+                                </div>
+                                <div class="history-content">
+                                    <div class="row">
+                                        <div class="col-md-6 subname">
+                                            <span>{{ major }}</span>
+                                        </div>
+                                        <div class="col-md-6 date lui-subtitle text-md-end">
+                                            <span>{{ start_date format="F Y" }} - {{ if end_date }} {{ end_date format="F Y" }} {{ else }} <b>Present</b> {{ /if }} </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="text">
+                                        <div><p>{{ description }}</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        {{ /educations }}
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <h5 class="history-title scrolla-element-anim-1 scroll-animate" data-animate="active">
+                        <span>Experience</span>
+                    </h5>
+                    <div class="history-items">
+                        {{ experiences }}
+                            <div class="history-item lui-collapse-item py-4 {{ if first }} opened {{ /if }} scrolla-element-anim-1 scroll-animate" data-animate="active">
+                                <div class="row align-items-center px-3">
+                                    <h6 class="col-md-6 name lui-collapse-btn py-2 px-3 px-md-4 {{ if first }} active {{ /if }}">
+                                        <span>{{ place }}</span>
+                                    </h6>
+                                    <span class="col-md-6 text-md-end px-3 px-md-5">{{ location }}</span>
+                                </div>
+                                <div class="history-content">
+                                    <div class="row">
+                                        <div class="col-md-6 subname">
+                                            <span>{{ role }}</span>
+                                        </div>
+                                        <div class="col-md-6 date lui-subtitle text-md-end">
+                                            <span>{{ start_date format="F Y" }} - {{ if end_date }} {{ end_date format="F Y" }} {{ else }} <b>Present</b> {{ /if }} </span>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <div><p>{{ description }}</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        {{ /experiences }}
+                    </div>
+                </div>
+            </div>
+
+            <div class="lui-bgtitle">
+                <span>{{ heading_title }}</span>
+            </div>
+        </div>
+    </div>
+</section>
