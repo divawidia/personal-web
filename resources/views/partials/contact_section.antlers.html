@@ -1,0 +1,116 @@
+<!-- Section - Contacts -->
+<section class="lui-section lui-gradient-bottom" id="contact-section">
+    <!-- Heading -->
+    <div class="lui-heading">
+        <div class="container">
+            <div class="m-titles align-center">
+                <h2 class="m-title splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
+                    <span>{{ heading_title }}</span>
+                </h2>
+                <div class="m-subtitle splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
+                    <span>{{ heading_subtitle }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="lui-contacts v-line v-line-left">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                    <div class="numbers-items">
+                        <div class="numbers-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                            <div class="icon">
+                                <i aria-hidden="true" class="far fa-map"></i>
+                            </div>
+                            <div class="title">
+                                <span>Address</span>
+                            </div>
+                            <div class="lui-text">
+                                <span>{{ address }}</span>
+                            </div>
+                        </div>
+
+                        <div class="numbers-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                            <div class="icon">
+                                <i aria-hidden="true" class="far fa-user"></i>
+                            </div>
+                            <div class="title">
+                                <span>Freelance</span>
+                            </div>
+                            <div class="lui-text">
+                                <span>{{ freelance_status }}</span>
+                            </div>
+                        </div>
+
+                        <div class="numbers-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                            <div class="icon">
+                                <i aria-hidden="true" class="far fa-envelope"></i>
+                            </div>
+                            <div class="title">
+                                <span>Email</span>
+                            </div>
+                            <div class="lui-text">
+                                <span>{{ email }}</span>
+                            </div>
+                        </div>
+
+                        <div class="numbers-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                            <div class="icon">
+                                <i aria-hidden="true" class="fab fa-telegram"></i>
+                            </div>
+                            <div class="title">
+                                <span>Telegram</span>
+                            </div>
+                            <div class="lui-text">
+                                <span>{{ telegram }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+                    <div class="contacts-form scrolla-element-anim-1 scroll-animate" data-animate="active">
+                        <div class="bg-img" style="background-image: url(/images/pat-1.png)"></div>
+                        <div class="contacts-form">
+                            {{ form:contact redirect="/#contact-section" }}
+                                {{ if success }}
+                                    <div class="alert alert-success alert-dismissible fade show text-success" role="alert">
+                                        <i class="fas fa-check-circle"></i>
+                                        Thanks, your message is sent successfully.
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    </div>
+                                {{ /if }}
+                            <div class="row d-flex justify-content-center justify-content-md-end">
+                                    {{ fields }}
+                                        <div class="group">
+                                            <label for="{{ handle }}">{{ display }} {{ if validate | contains:required }} <b>*</b> {{ /if }}
+                                                {{ if type == "text" }}
+                                                    <input type="{{ input_type }}" id="{{ handle }}" name="{{ handle }}" placeholder="{{ placeholder }}" required/>
+                                                {{ /if }}
+
+                                                {{ if type == "textarea" }}
+                                                    <textarea id="{{ handle }}" name="{{ handle }}" placeholder="{{ placeholder }}" required></textarea>
+                                                {{ /if }}
+                                            </label>
+                                            {{ if error }}
+                                                <span class="text-sm text-danger">{{ error }}</span>
+                                            {{ /if }}
+                                        </div>
+                                    {{ /fields }}
+                                    <button type="submit" class="btn align-items-end w-50 text-center rounded-pill text-capitalize">
+                                        <span>Send Message</span>
+                                    </button>
+                                </div>
+                            {{ /form:contact }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lui-bgtitle">
+                <span>{{ heading_title }}</span>
+            </div>
+        </div>
+    </div>
+</section>
