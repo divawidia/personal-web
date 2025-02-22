@@ -1,15 +1,97 @@
 <!doctype html>
 <html lang="{{ site:short_locale }}">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{ title ?? site:name }}</title>
-        {{ vite src="resources/js/site.js|resources/css/site.css" }}
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+        <title>{{ title ?? site:name }} | {{ site_name_and_metadata:meta_title or global:site_name_and_metadata.meta_title }}</title>
+        <meta name="description" content="{{ site_name_and_metadata:meta_description or global:site_name_and_metadata.meta_description }}">
+        <meta name="keywords" content="{{ site_name_and_metadata:meta_keywords | join:', ' }}">
+        <link rel="canonical" href="{{ site_name_and_metadata:canonical_url or global:site_name_and_metadata.canonical_url }}">
+        <meta name="robots" content="{{ site_name_and_metadata:robots or global:site_name_and_metadata..robots }}">
+
+        <!-- Open Graph -->
+        <meta property="og:title" content="{{ site_name_and_metadata:open_graph_title or global:site_name_and_metadata..open_graph_title }}">
+        <meta property="og:description" content="{{ site_name_and_metadata:open_graph_description or global:site_name_and_metadata..open_graph_description }}">
+        <meta property="og:image" content="{{ site_name_and_metadata:open_graph_image or global:site_name_and_metadata..open_graph_image }}">
+        <meta property="og:url" content="{{ site_name_and_metadata:open_graph_url or global:site_name_and_metadata..open_graph_url }}">
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="{{ site_name_and_metadata:twitter_card or global:site_name_and_metadata..twitter_card }}">
+        <meta name="twitter:title" content="{{ site_name_and_metadata:twitter_title or global:site_name_and_metadata..twitter_title }}">
+        <meta name="twitter:description" content="{{ site_name_and_metadata:twitter_description or global:site_name_and_metadata..twitter_description }}">
+        <meta name="twitter:image" content="{{ site_name_and_metadata:twitter_image or global:site_name_and_metadata..twitter_image }}">
+
+        <!-- Fonts -->
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Jost%3A0%2C100%3B0%2C200%3B0%2C300%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900%3B1%2C100%3B1%2C200%3B1%2C300%3B1%2C400%3B1%2C500%3B1%2C600%3B1%2C700%3B1%2C800%3B1%2C900%7CCaveat%3A400%3B500%3B600%3B700&#038;display=swap"
+            type="text/css"
+            media="all"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto"
+            type="text/css"
+            media="all"
+        />
+
+        <!-- Load CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rrssb/1.9.3/css/rrssb.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"/>
+
+        <!--[if lt IE 9]>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <!-- Favicon for Most Browsers -->
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ logo:favicon:thirty_two_favicon }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ logo:favicon:sixteen_favicon }}">
+        <link rel="icon" type="image/x-icon" href="{{ logo:favicon:general_favicon }}">
+
+        <!-- Apple Touch Icon (For iOS Home Screen Shortcut) -->
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ logo:favicon:apple_touch_favicon }}">
+
+        <!-- Android Chrome (Web App Icons & Theme Color) -->
+        <link rel="manifest" href="{{ logo:favicon:site_manifest }}">
+        <meta name="theme-color" content="#29a587">
+
+        <!-- Microsoft Tiles (Windows 10 and Edge) -->
+        <meta name="msapplication-TileColor" content="#29a587">
+        <meta name="msapplication-TileImage" content="{{ logo:favicon:one_fifty_favicon }}">
+
+        {{ vite src="resources/js/site.js|resources/sass/site.scss" }}
     </head>
-    <body class="bg-slate-100 dark:bg-gray-800 font-sans leading-normal text-slate-800 dark:text-gray-400">
-        <div class="mx-auto px-2 lg:min-h-screen flex flex-col items-center justify-center">
-            {{ template_content }}
+
+    <body class="home light-skin">
+        <div class="container-page">
+            {{ partial:preloader }}
+
+            {{ partial:navbar :socials="social_links" }}
+
+            <!-- Wrapper -->
+            <div class="wrapper">
+                {{ template_content }}
+            </div>
+
+            {{ partial:footer }}
         </div>
+
+    <!--    <div class="cursor"></div>-->
+        <!-- Plugins -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jarallax/1.12.8/jarallax.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-scrolla@0.0.3/dist/js/jquery.scrolla.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/skrollr@0.6.26/dist/skrollr.min.js"></script>
+        <script src="https://unpkg.com/imagesloaded@4.1.4/imagesloaded.pkgd.min.js"></script>
+        <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/rrssb/1.9.3/js/rrssb.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-jekyll-search/1.10.0/simple-jekyll-search.min.js"></script>
     </body>
 </html>
