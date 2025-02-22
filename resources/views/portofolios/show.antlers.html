@@ -1,0 +1,125 @@
+
+<!-- Section Started Heading -->
+<section class="section section-inner started-heading">
+
+    <!-- Heading -->
+    <div class="container">
+        <div class="m-titles align-left">
+            <h1 class="m-title splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
+                <span>{{ title }}</span>
+            </h1>
+
+            <div class="splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
+                {{ categories }}
+                    <span class="tags">{{ title }}</span>
+                {{ /categories }}
+            </div>
+        </div>
+    </div>
+
+    <!-- Details -->
+    <div class="v-line v-line-right v-line-top">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+
+                    <div class="m-details">
+
+                        <div class="details-label">
+                            <span>Year</span>
+                            <strong><span>{{ year }}</span></strong>
+                        </div>
+
+                        <div class="details-label">
+                            <span>Technology</span>
+                            <strong><span>
+                                {{ technology }}
+                                <img height="45" src="{{ logo }}" alt="{{ title }}" class="mt-2 mx-1"/>
+                                {{ /technology }}
+                            </span></strong>
+                        </div>
+
+                        <div class="details-label">
+                            <span>Categories</span>
+                            {{ categories }} <strong><span>{{ title }}</span></strong> {{ /categories }}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 align-right">
+                    {{ buttons }}
+                    <a target="_blank" href="{{ button_url }}" class="btn scrolla-element-anim-1 scroll-animate" data-animate="active">
+                        <span>{{ button_text }}</span>
+                    </a>
+                    {{ /buttons }}
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+<!-- Section - Image -->
+<div class="section section-inner">
+
+    <!-- Image -->
+    <div class="m-image-large">
+        <div class="image">
+            <div class="img js-parallax" style="background-image: url({{ thumbnail }});"></div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<!-- Section - Description -->
+<section class="section section-inner">
+    <div class="container">
+        <div class="post-content mt-5">
+            <h3>Descriptions</h3>
+        </div>
+        <div class="post-content">
+            {{ description }}
+        </div>
+    </div>
+</section>
+
+<!-- Section - Gallery -->
+<div class="section section-inner">
+    <div class="container">
+        <!-- Section Gallery -->
+        <div class="m-gallery">
+            <div class="row">
+                {{ gallery }}
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="works-item">
+                        <div class="image scrolla-element-anim-1 scroll-animate" data-animate="active">
+                            <div class="img">
+                                <a href="{{ url }}">
+                                    <img decoding="async" src="{{ url }}" alt="{{ alt or 'Gallery Image' }}" loading="lazy">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{ /gallery }}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Section - Description -->
+<section class="section section-inner">
+    <div class="container">
+        <div class="post-content mt-5">
+            <h3>Features</h3>
+        </div>
+        <div class="post-content">
+            {{ features }}
+        </div>
+    </div>
+</section>
