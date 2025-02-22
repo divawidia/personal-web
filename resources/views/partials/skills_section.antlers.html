@@ -1,0 +1,49 @@
+<section class="lui-section lui-gradient-center" id="skills-section">
+    <!-- Heading -->
+    <div class="lui-heading">
+        <div class="container">
+            <div class="m-titles align-center">
+                <h2 class="m-title splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
+                    <span>{{ heading_title }}</span>
+                </h2>
+                <div class="m-subtitle splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
+                    <span>{{ heading_subtitle }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="v-line v-line-left">
+        <div class="container">
+            <div class="row">
+                {{ skills }}
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="skills-items">
+
+                            <div class="skills-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                                <h6 class="name mb-2">
+                                    <span>{{ tool_name }}</span>
+                                </h6>
+                                <img height="60" src="{{ tool_logo }}" alt="PHP" class="mx-4 mb-3"/>
+                                <div class="dots">
+                                    <div class="dot" style="width: {{ proficiency_percentage }}%">
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="value">
+                                    <span class="num">{{ proficiency_percentage }} <span>%</span> </span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                {{ /skills }}
+            </div>
+
+            <div class="lui-bgtitle">
+                <span>Skills</span>
+            </div>
+        </div>
+    </div>
+</section>
