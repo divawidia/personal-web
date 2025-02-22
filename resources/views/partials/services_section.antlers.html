@@ -1,0 +1,47 @@
+<!-- Section - Services -->
+<section class="lui-section lui-gradient-bottom" id="services-section">
+    <!-- Heading -->
+    <div class="lui-heading">
+        <div class="container">
+            <div class="m-titles align-center">
+                <h2 class="m-title splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
+                    <span>{{ heading_title }}</span>
+                </h2>
+                <div class="m-subtitle splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
+                    <span>{{ heading_subtitle }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div class="v-line v-line-right">
+        <div class="container">
+            <div class="works-box">
+                <div class="works-items works-masonry-items row">
+                    {{ service_lists }}
+                    <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 {{ categories }} {{ slug }} {{ /categories }}">
+                        <div class="services-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                            <div class="lui-subtitle">
+                                <span>{{ subtitle }}</span>
+                            </div>
+                            <div class="icon"><i class="{{ icon }}"></i></div>
+                            <h5 class="lui-title">
+                                <span>{{ title }}</span>
+                            </h5>
+                            <div class="lui-text">
+                                <div><p>{{ body }}</p></div>
+                            </div>
+                            <div class="image" style="background-image: url(/images/pat-2.png)"></div>
+                        </div>
+                    </div>
+                    {{ /service_lists }}
+                </div>
+            </div>
+
+            <div class="lui-bgtitle">
+                <span>{{ heading_subtitle }}</span>
+            </div>
+        </div>
+    </div>
+</section>
