@@ -1,0 +1,49 @@
+<!-- Section - Hero Started -->
+<section class="lui-section lui-section-hero lui-gradient-top" id="started-section">
+    <div class="container">
+        <!-- Hero Started -->
+        <div class="lui-started v-line v-line-left">
+            <div class="section hero-started">
+                <div class="content scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <div class="titles">
+                        <div class="lui-subtitle">
+                            <span>Hello, <b>my name is</b></span>
+                        </div>
+                        <h1 class="title splitting-text-anim-1 scroll-animate" data-splitting="chars" data-animate="active">
+                            <span><b>{{ first_name }}</b> {{ last_name }}</span>
+                        </h1>
+                        <div class="label lui-subtitle">I am <strong> {{ role }}</strong></div>
+                    </div>
+                    <div class="description">
+                        <div>
+                            <p>{{ summary }}</p>
+                        </div>
+                        <div class="social-links">
+                            {{ socials:social_links }}
+                                <a target="_blank" rel="nofollow" href="{{ social_media_url }}" title="{{ social_media_name }}">
+                                    <i aria-hidden="true" class="{{ social_media_icon }}"></i>
+                                </a>
+                            {{ /socials:social_links }}
+                        </div>
+                    </div>
+                    <div class="bts">
+                        <a target="_blank" href="{{ button_url }}" class="btn">
+                            <span>{{ button_text }}</span>
+                        </a>
+                        <a href="#skills-section" class="btn-lnk">My Skills</a>
+                    </div>
+                </div>
+                <div class="slide scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <img decoding="async" src="{{ profile_picture }}" alt="Zoé Miller"/>
+                    <span class="circle circle-1"></span>
+                    <span class="circle img-1" style="background-image: url(/images/pat-1.png)"></span>
+                    <span class="circle img-2" style="background-image: url(/images/pat-2.png)"></span>
+                    <span class="circle img-3" style="background-image: url(/images/pat-2.png)"></span>
+                </div>
+            </div>
+            <div class="lui-bgtitle">
+                <span>{{ role }}</span>
+            </div>
+        </div>
+    </div>
+</section>
