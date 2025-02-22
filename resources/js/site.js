@@ -4,8 +4,6 @@ import 'bootstrap';
 import Splitting from "splitting";
 import "splitting/dist/splitting.css";
 import "splitting/dist/splitting-cells.css";
-import Swiper from "swiper";
-import "swiper/css/swiper.min.css";
 
 (function ($) {
     "use strict";
@@ -235,75 +233,7 @@ import "swiper/css/swiper.min.css";
             return false;
         });
 
-        /*
-            Carousel Services
-        */
-        var swiperServices = new Swiper(".js-services", {
-            slidesPerView: 3,
-            spaceBetween: 40,
-            watchSlidesVisibility: true,
-            noSwipingSelector: "a",
-            loop: false,
-            speed: 1000,
-            pagination: {
-                el: ".js-services .swiper-pagination",
-                type: "bullets",
-                clickable: true,
-            },
-            navigation: false,
-            breakpoints: {
-                // when window width is >= 320px
-                0: {
-                    slidesPerView: 1,
-                    spaceBetween: 20,
-                },
-                // when window width is >= 480px
-                767: {
-                    slidesPerView: 2,
-                    spaceBetween: 30,
-                },
-                // when window width is >= 640px
-                1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 40,
-                },
-            },
-        });
 
-        /*
-            Carousel Testimonials
-        */
-        var swiperTestimonials = new Swiper(".js-testimonials", {
-            slidesPerView: 3,
-            spaceBetween: 40,
-            watchSlidesVisibility: true,
-            noSwipingSelector: "a",
-            loop: false,
-            speed: 1000,
-            pagination: {
-                el: ".swiper-pagination",
-                type: "bullets",
-                clickable: true,
-            },
-            navigation: false,
-            breakpoints: {
-                // when window width is >= 320px
-                0: {
-                    slidesPerView: 1,
-                    spaceBetween: 20,
-                },
-                // when window width is >= 480px
-                767: {
-                    slidesPerView: 2,
-                    spaceBetween: 30,
-                },
-                // when window width is >= 640px
-                1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 40,
-                },
-            },
-        });
 
         /*
             Initialize portfolio items
@@ -477,11 +407,11 @@ import "swiper/css/swiper.min.css";
     // 		mouseY = e.clientY;
     // 	});
 
-    // 	$('a, .swiper-pagination, .swiper-button-prev, .swiper-button-next, button, .button, .btn, .lnk').hover(function() {
-    // 		$('.cursor').addClass("cursor-zoom");
-    // 	}, function(){
-    // 		$('.cursor').removeClass("cursor-zoom");
-    // 	});
+    	// $('a, .swiper-pagination, .swiper-button-prev, .swiper-button-next, button, .button, .btn, .lnk').hover(function() {
+    	// 	$('.cursor').addClass("cursor-zoom");
+    	// }, function(){
+    	// 	$('.cursor').removeClass("cursor-zoom");
+    	// });
 
     // 	setInterval(move,1000/60);
 
