@@ -1,0 +1,77 @@
+<!-- Section - Works -->
+<section class="lui-section lui-gradient-top" id="works-section">
+    <!-- Heading -->
+    <div class="lui-heading">
+        <div class="container">
+            <div class="m-titles align-center">
+                <h2 class="m-title splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
+                    <span>{{ heading_title }}</span>
+                </h2>
+                <div class="m-subtitle splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
+                    <span>{{ heading_subtitle }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Works -->
+    <div class="v-line v-line-right">
+        <div class="container">
+            <div class="works-box">
+                <div class="filter-links scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <a href="#" class="lui-subtitle active" data-href=".works-col">All</a>
+                    {{ taxonomy:categories }}
+                        <a href="#" class="lui-subtitle" data-href=".{{ slug }}">{{ title }}</a>
+                    {{ /taxonomy:categories }}
+                </div>
+
+
+                <div class="works-items works-masonry-items row">
+                    {{ collection:portofolios as="portfolios" where="featured:true" limit="6"}}
+                        {{ if no_results }}
+                        <h4 class="text-center py-4">No Portfolios Yet</h4>
+                        {{ /if }}
+                        {{ portfolios }}
+                            <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 {{ categories }} {{ slug }} {{ /categories }}">
+                                <div class="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                                    <div class="image">
+                                        <div class="img">
+                                            <a href="{{ url }}">
+                                                <img decoding="async" src="{{ thumbnail }}" alt="Explore"/>
+                                                <span class="overlay"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <span class="category">{{ categories }}  <span class="tags">{{ title }}</span> {{ /categories }}</span>
+                                        <h5 class="name">
+                                            <a href="{{ url }}">{{ title }} </a>
+                                        </h5>
+                                        <div class="text">
+                                            <p>{{ short_description }}</p>
+                                        </div>
+                                        <a href="{{ url }}" class="lnk">View Project</a>
+                                    </div>
+                                    <div class="bg-img" style="background-image: url(/images/pat-2.png)"></div>
+                                </div>
+                            </div>
+                        {{ /portfolios }}
+
+                    {{ /collection:portofolios }}
+                </div>
+
+                {{ if collection:portofolios count=">6" }}
+                    <div class="load-more-link">
+                        <a href="{{ nav handle='navbar' }}/portfolios" class="btn scrolla-element-anim-1 scroll-animate" data-animate="active">
+                            <span>View More</span>
+                        </a>
+                    </div>
+                {{ /if }}
+            </div>
+
+            <div class="lui-bgtitle">
+                <span>{{ heading_title }}</span>
+            </div>
+        </div>
+    </div>
+</section>
