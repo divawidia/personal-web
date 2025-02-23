@@ -1,0 +1,46 @@
+title: 'Page Builder'
+fields:
+  -
+    handle: sections
+    field:
+      type: replicator
+      display: Sections
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            hero_section:
+              display: 'Hero Section'
+              fields:
+                -
+                  import: hero
+            services_section:
+              display: 'Services Section'
+              fields:
+                -
+                  import: services
+            skills_section:
+              display: 'Skills Section'
+              fields:
+                -
+                  import: skills
+            portfolios_section:
+              display: 'Portfolios Section'
+              fields:
+                -
+                  import: portfolios
+            resume_section:
+              display: 'Resume Section'
+              fields:
+                -
+                  import: resume
+            certificates_section:
+              display: 'Certificates Section'
+              fields:
+                -
+                  import: portfolios
+            contact_section:
+              display: 'Contact Section'
+              fields:
+                -
+                  import: certificates
