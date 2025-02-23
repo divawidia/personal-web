@@ -1,0 +1,16 @@
+title: Portfolios
+fields:
+  -
+    handle: heading_title
+    field:
+      type: text
+      display: 'Heading Title'
+      validate:
+        - required
+  -
+    handle: heading_subtitle
+    field:
+      type: text
+      display: 'Heading Subtitle'
+      validate:
+        - required
