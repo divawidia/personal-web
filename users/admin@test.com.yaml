@@ -1,3 +1,23 @@
 super: true
 id: 9777f40c-e866-44a6-a64b-1907a2ec929e
 password_hash: $2y$12$NZ//ul7A8Khu.ykzri4mxem5g25JFtgi.1F3eI8ly./dPWuK6WtEq
+preferences:
+  collections:
+    pages:
+      after_save: continue_editing
+    portofolios:
+      columns:
+        - title
+        - slug
+        - status
+        - short_description
+        - thumbnail
+        - year
+  forms:
+    contact:
+      columns:
+        - datestamp
+        - email
+        - full_name
+        - subject
+        - message
