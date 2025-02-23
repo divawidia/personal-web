@@ -1,0 +1,39 @@
+title: Contact
+fields:
+  -
+    handle: heading_title
+    field:
+      type: text
+      display: 'Heading Title'
+      validate:
+        - required
+  -
+    handle: heading_subtitle
+    field:
+      type: text
+      display: 'Heading Subtitle'
+      validate:
+        - required
+  -
+    handle: address
+    field:
+      type: text
+      display: Address
+      validate:
+        - required
+  -
+    handle: freelance_status
+    field:
+      type: text
+      display: 'Freelance Status'
+  -
+    handle: email
+    field:
+      input_type: email
+      type: text
+      display: Email
+  -
+    handle: telegram
+    field:
+      type: text
+      display: Telegram
