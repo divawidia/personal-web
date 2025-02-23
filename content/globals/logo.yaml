@@ -1,0 +1,13 @@
+title: Logo
+data:
+  navbar_logo: logo1.png
+  preloader_logo: logo1.png
+  favicon:
+    thirty_two_favicon: favicon-32x32.png
+    sixteen_favicon: favicon-16x16.png
+    apple_touch_favicon: apple-touch-icon.png
+    site_manifest: site.webmanifest
+    general_favicon: favicon.ico
+    one_nine_two_favicon: android-chrome-192x192.png
+    five_one_two_favicon: android-chrome-512x512.png
+    one_fifty_favicon: android-chrome-192x192.png
