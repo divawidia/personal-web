@@ -1,0 +1,16 @@
+title: Certificates
+template: certificates/show
+layout: layout
+taxonomies:
+  - categories
+revisions: false
+route: 'certificates/{slug}'
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true
