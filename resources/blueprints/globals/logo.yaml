@@ -1,0 +1,94 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: navbar_logo
+            field:
+              max_files: 1
+              min_files: 1
+              container: assets
+              type: assets
+              display: 'Navbar Logo'
+              validate:
+                - required
+          -
+            handle: preloader_logo
+            field:
+              max_files: 1
+              min_files: 1
+              container: assets
+              type: assets
+              display: 'Preloader Logo'
+          -
+            handle: favicon
+            field:
+              type: group
+              display: Favicon
+              fields:
+                -
+                  handle: thirty_two_favicon
+                  field:
+                    max_files: 1
+                    min_files: 1
+                    container: assets
+                    type: assets
+                    display: '32x32 Favicon'
+                -
+                  handle: sixteen_favicon
+                  field:
+                    max_files: 1
+                    min_files: 1
+                    container: assets
+                    type: assets
+                    display: '16x16 Favicon'
+                -
+                  handle: apple_touch_favicon
+                  field:
+                    max_files: 1
+                    min_files: 1
+                    container: assets
+                    type: assets
+                    display: 'Apple Touch Favicon'
+                -
+                  handle: site_manifest
+                  field:
+                    max_files: 1
+                    min_files: 1
+                    container: assets
+                    type: assets
+                    display: 'Site Manifest'
+                -
+                  handle: general_favicon
+                  field:
+                    max_files: 1
+                    min_files: 1
+                    container: assets
+                    type: assets
+                    display: 'General Favicon'
+                -
+                  handle: one_nine_two_favicon
+                  field:
+                    max_files: 1
+                    min_files: 1
+                    container: assets
+                    type: assets
+                    display: '192x192 Favicon'
+                -
+                  handle: five_one_two_favicon
+                  field:
+                    max_files: 1
+                    min_files: 1
+                    container: assets
+                    type: assets
+                    display: '512x512 Favicon'
+                -
+                  handle: one_fifty_favicon
+                  field:
+                    max_files: 1
+                    min_files: 1
+                    container: assets
+                    type: assets
+                    display: '150x150 Favicon'
