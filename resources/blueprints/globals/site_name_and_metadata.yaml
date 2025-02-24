@@ -1,0 +1,107 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: meta_title
+            field:
+              type: text
+              display: 'Meta Title'
+              instructions: 'Enter a short, compelling title (max 60 chars).'
+              validate:
+                - required
+          -
+            handle: meta_description
+            field:
+              type: textarea
+              display: 'Meta Description'
+              instructions: 'Enter a short description (max 160 chars).'
+              validate:
+                - required
+          -
+            handle: meta_keywords
+            field:
+              type: taggable
+              display: 'Meta Keywords'
+              instructions: 'Comma-separated keywords (optional).'
+          -
+            handle: canonical_url
+            field:
+              type: text
+              display: 'Canonical URL'
+              instructions: 'Set the canonical URL to avoid duplicate content issues.'
+          -
+            handle: robots
+            field:
+              options:
+                -
+                  key: index_follow
+                  value: 'Index, Follow'
+                -
+                  key: noindex_nofollow
+                  value: 'No Index, No Follow'
+              default: index_follow
+              type: select
+              display: Robots
+          -
+            handle: open_graph_title
+            field:
+              type: text
+              display: 'Open Graph Title'
+              instructions: 'The title used when sharing your page on social networks like Facebook or LinkedIn.'
+              validate:
+                - required
+          -
+            handle: open_graph_description
+            field:
+              type: textarea
+              display: 'Open Graph Description'
+              instructions: 'A description that appears in social media previews.'
+          -
+            handle: open_graph_image
+            field:
+              container: assets
+              type: assets
+              display: 'Open Graph Image'
+              instructions: 'The URL of an image that will appear when the page is shared on social platforms.'
+          -
+            handle: open_graph_url
+            field:
+              type: link
+              display: 'Open Graph URL'
+              instructions: 'The URL of the page that is being shared.'
+          -
+            handle: twitter_title
+            field:
+              type: text
+              display: 'Twitter Title'
+              instructions: 'The title for Twitter cards.'
+          -
+            handle: twitter_description
+            field:
+              type: textarea
+              display: 'Twitter Description'
+              instructions: 'A description for Twitter card previews.'
+          -
+            handle: twitter_image
+            field:
+              container: assets
+              type: assets
+              display: 'Twitter Image'
+              instructions: 'The image used in Twitter card previews.'
+          -
+            handle: twitter_card_type
+            field:
+              options:
+                -
+                  key: summary
+                  value: Summary
+                -
+                  key: summary_large_image
+                  value: 'Summary Large Image'
+              default: summary_large_image
+              type: select
+              display: 'Twitter Card Type'
+              instructions: 'Specifies the type of card to display on Twitter.'
