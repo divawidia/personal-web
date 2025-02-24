@@ -1,0 +1,46 @@
+title: Services
+fields:
+  -
+    handle: heading_title
+    field:
+      type: text
+      display: 'Heading Title'
+      validate:
+        - required
+  -
+    handle: heading_subtitle
+    field:
+      type: text
+      display: 'Heading Subtitle'
+  -
+    handle: service_lists
+    field:
+      type: grid
+      display: 'Service Lists'
+      validate:
+        - required
+      fields:
+        -
+          handle: title
+          field:
+            type: text
+            display: Title
+            validate:
+              - required
+        -
+          handle: body
+          field:
+            type: text
+            display: Body
+        -
+          handle: subtitle
+          field:
+            type: text
+            display: Subtitle
+            validate:
+              - required
+        -
+          handle: icon
+          field:
+            type: text
+            display: Icon
