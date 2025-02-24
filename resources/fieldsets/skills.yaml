@@ -1,0 +1,52 @@
+title: Skills
+fields:
+  -
+    handle: heading_title
+    field:
+      type: text
+      display: 'Heading Title'
+      validate:
+        - required
+  -
+    handle: heading_subtitle
+    field:
+      type: text
+      display: 'Heading Subtitle'
+      validate:
+        - required
+  -
+    handle: skills
+    field:
+      type: grid
+      display: Skills
+      validate:
+        - required
+      fields:
+        -
+          handle: tool_logo
+          field:
+            max_files: 1
+            min_files: 1
+            container: assets
+            type: assets
+            display: 'Tool Logo'
+            validate:
+              - required
+        -
+          handle: tool_name
+          field:
+            type: text
+            display: 'Tool Name'
+            validate:
+              - required
+        -
+          handle: proficiency_percentage
+          field:
+            input_type: number
+            character_limit: 100
+            type: text
+            display: 'Proficiency Percentage'
+            validate:
+              - required
+              - 'min:0'
+              - 'max:100'
