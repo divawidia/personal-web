@@ -1,0 +1,27 @@
+title: 'Social Links'
+fields:
+  -
+    handle: social_links
+    field:
+      type: grid
+      display: 'Social Links'
+      fields:
+        -
+          handle: social_media_name
+          field:
+            type: text
+            display: 'Social Media Name'
+            validate:
+              - required
+        -
+          handle: social_media_icon
+          field:
+            type: text
+            display: 'Social Media Icon'
+            validate:
+              - required
+        -
+          handle: social_media_url
+          field:
+            type: link
+            display: 'Social Media URL'
