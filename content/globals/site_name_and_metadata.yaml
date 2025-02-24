@@ -1,0 +1,25 @@
+title: 'SEO Settings'
+data:
+  meta_title: 'Diva Widia - Fullstack Developer'
+  meta_description: "Discover Diva Widia's professional journey – a blend of creative design and technical expertise. Explore projects, skills, and accomplishments that drive success."
+  meta_keywords:
+    - 'Full Stack Developer'
+    - 'Web Developer'
+    - 'Software Engineer'
+    - Laravel
+    - JavaScript
+    - Vue.js
+    - PHP
+    - Node.js
+    - Frontend
+    - Backend
+    - UI/UX
+    - Devops
+  canonical_url: 'http://personal-web.test/'
+  robots: index_follow
+  open_graph_title: 'Diva Widia - Fullstack Developer'
+  open_graph_description: "Discover Diva Widia's professional journey – a blend of creative design and technical expertise. Explore projects, skills, and accomplishments that drive success."
+  open_graph_url: 'http://personal-web.test/'
+  twitter_title: 'Diva Widia - Fullstack Developer'
+  twitter_description: "Discover Diva Widia's professional journey – a blend of creative design and technical expertise. Explore projects, skills, and accomplishments that drive success."
+  twitter_card_type: summary_large_image
