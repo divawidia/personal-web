@@ -1,0 +1,102 @@
+title: Resume
+fields:
+  -
+    handle: heading_title
+    field:
+      type: text
+      display: 'Heading Title'
+      validate:
+        - required
+  -
+    handle: heading_subtitle
+    field:
+      type: text
+      display: 'Heading Subtitle'
+      validate:
+        - required
+  -
+    handle: educations
+    field:
+      type: grid
+      display: Educations
+      fields:
+        -
+          handle: school_name
+          field:
+            type: text
+            display: 'School Name'
+            validate:
+              - required
+        -
+          handle: location
+          field:
+            type: text
+            display: Location
+            validate:
+              - required
+        -
+          handle: major
+          field:
+            type: text
+            display: Major
+            validate:
+              - required
+        -
+          handle: start_date
+          field:
+            type: date
+            display: 'Start Date'
+            validate:
+              - required
+        -
+          handle: end_date
+          field:
+            type: date
+            display: 'End Date'
+        -
+          handle: description
+          field:
+            type: markdown
+            display: Description
+  -
+    handle: experiences
+    field:
+      type: grid
+      display: Experiences
+      fields:
+        -
+          handle: place
+          field:
+            type: text
+            display: Place
+            validate:
+              - required
+        -
+          handle: location
+          field:
+            type: text
+            display: Location
+            validate:
+              - required
+        -
+          handle: role
+          field:
+            type: text
+            display: Role
+            validate:
+              - required
+        -
+          handle: start_date
+          field:
+            type: date
+            display: 'Start Date'
+        -
+          handle: end_date
+          field:
+            type: date
+            display: 'End Date'
+        -
+          handle: description
+          field:
+            type: markdown
+            display: Description
