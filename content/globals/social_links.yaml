@@ -1,0 +1,8 @@
+title: 'Social Links'
+data:
+  social_links:
+    -
+      id: m8nx6isl
+      social_media_name: LinkedIn
+      social_media_icon: 'fab fa-linkedin'
+      social_media_url: 'https://www.linkedin.com/in/diva-widia-0aab48197/'
