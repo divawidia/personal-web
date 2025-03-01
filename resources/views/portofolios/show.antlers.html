@@ -32,15 +32,6 @@
                         </div>
 
                         <div class="details-label">
-                            <span>Technology</span>
-                            <strong><span>
-                                {{ technology }}
-                                <img height="45" src="{{ logo }}" alt="{{ title }}" class="mt-2 mx-1"/>
-                                {{ /technology }}
-                            </span></strong>
-                        </div>
-
-                        <div class="details-label">
                             <span>Categories</span>
                             {{ categories }} <strong><span>{{ title }}</span></strong> {{ /categories }}
                         </div>
@@ -76,13 +67,22 @@
 
 
 <!-- Section - Description -->
-<section class="section section-inner">
+<section class="section section-inner my-5">
     <div class="container">
-        <div class="post-content mt-5">
+        <div class="post-content">
             <h3>Descriptions</h3>
         </div>
         <div class="post-content">
             {{ description }}
+        </div>
+
+        <div class="post-content mt-5">
+            <h3>Technologies Used</h3>
+        </div>
+        <div class="post-content">
+            {{ technology }}
+                <img height="55" src="{{ logo }}" alt="{{ title }}" class="mt-2 mx-1"/>
+            {{ /technology }}
         </div>
     </div>
 </section>
