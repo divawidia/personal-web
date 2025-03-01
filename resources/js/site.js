@@ -124,7 +124,7 @@ import "splitting/dist/splitting-cells.css";
         /**
          Header Switcher Button
          **/
-        var skin = $.cookie("skin");
+        var skin = "dark";
         if (skin == "light") {
             $("body").removeClass("dark-skin");
             $("body").addClass("light-skin");
