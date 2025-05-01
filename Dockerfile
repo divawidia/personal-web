@@ -1,7 +1,7 @@
 FROM php:8.2-fpm-alpine
 
 # Set working directory
-WORKDIR /var/www/html
+WORKDIR /var/www/divawidia.my.id
 
 # Install system dependencies
 RUN apk add --no-cache \
@@ -24,13 +24,13 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 # Copy the existing application directory contents to the working directory
-COPY . /var/www/html
+COPY . /var/www/divawidia.my.id
 
 # Build assets with Vite
 RUN npm install && npm run build
 
 # Copy the existing application directory permissions to the working directory
-COPY --chown=www-data:www-data . /var/www/html
+COPY --chown=www-data:www-data . /var/www/divawidia.my.id
 
 # Copy nginx config
 COPY ./docker/nginx.conf /etc/nginx/nginx.conf
