@@ -7,5 +7,8 @@ use Spatie\Sitemap\SitemapGenerator;
 
 class SitemapController extends Controller
 {
-    SitemapGenerator::create('https://divawidia.my.id')->writeToFile(public_path('sitemap.xml'));
+    public function generateSitemap()
+    {
+        SitemapGenerator::create('https://divawidia.my.id')->writeToFile(public_path('sitemap.xml'));
+    }
 }
