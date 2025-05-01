@@ -18,7 +18,7 @@ RUN apk add --no-cache \
     && docker-php-ext-install pdo pdo_sqlite zip mbstring bcmath
 
 # Clear cache
-RUN apt-get clean && rm -rf /var/lib/apt/lists/*
+# RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Install Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
