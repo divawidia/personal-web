@@ -38,12 +38,6 @@ jobs:
           mkdir -p database
           touch database/database.sqlite
 
-      - name: Execute tests (Unit and Feature tests) via PHPUnit/Pest
-        env:
-          DB_CONNECTION: sqlite
-          DB_DATABASE: database/database.sqlite
-        run: php artisan test --coverage-text --colors=never
-
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
@@ -54,6 +48,12 @@ jobs:
 
       - name: Build frontend assets
         run: npm run build
+
+      - name: Execute tests (Unit and Feature tests) via PHPUnit/Pest
+        env:
+          DB_CONNECTION: sqlite
+          DB_DATABASE: database/database.sqlite
+        run: php artisan test --coverage-text --colors=never
 
       - name: Build Docker image
         run: docker build -t divawidia-app:latest .
