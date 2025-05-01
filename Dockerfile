@@ -1,5 +1,8 @@
 FROM php:8.2-fpm-alpine
 
+# Set working directory
+WORKDIR /var/www/html
+
 # Install system dependencies
 RUN apk add --no-cache \
     nginx \
@@ -14,22 +17,20 @@ RUN apk add --no-cache \
     supervisor \
     && docker-php-ext-install pdo pdo_sqlite zip mbstring bcmath
 
-# Set working directory
-WORKDIR /var/www/html
+# Clear cache
+RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Copy composer and install dependencies
-COPY composer.json composer.lock ./
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-RUN composer install --no-dev --optimize-autoloader
+# Install Composer
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
-# Copy app files
-COPY . .
+# Copy the existing application directory contents to the working directory
+COPY . /var/www/html
 
 # Build assets with Vite
 RUN npm install && npm run build
 
-# Set permissions for storage and bootstrap cache
-RUN chown -R www-data:www-data storage bootstrap/cache
+# Copy the existing application directory permissions to the working directory
+COPY --chown=www-data:www-data . /var/www/html
 
 # Copy nginx config
 COPY ./docker/nginx.conf /etc/nginx/nginx.conf
