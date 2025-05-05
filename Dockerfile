@@ -38,4 +38,4 @@ RUN chown -R www-data:www-data /var/www/personal-web && chmod -R 775 /var/www/pe
 EXPOSE 9000
 
 # Start PHP-FPM and Nginx in foreground
-CMD sh -c "php-fpm & nginx -g 'daemon off;'"
+CMD ["php-fpm"]
