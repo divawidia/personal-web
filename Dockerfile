@@ -27,7 +27,7 @@ COPY . .
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 # Install PHP and JS dependencies
-RUN composer install \
+RUN composer install --no-dev --prefer-dist --optimize-autoloader \
     && npm install \
     && npm run build
 
