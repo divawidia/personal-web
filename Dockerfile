@@ -20,22 +20,20 @@ RUN apk add --no-cache \
 # Clear cache
 # RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Copy the existing application directory contents to the working directory
-COPY . /var/www/divawidia.my.id
-
 # Install Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
-# Install PHP and JS dependencies
-RUN composer install --no-dev --optimize-autoloader \
-    && npm install \
-    && npm run build
+# Copy the existing application directory contents to the working directory
+COPY . /var/www/divawidia.my.id
 
-# Set permissions
-RUN chown -R www-data:www-data /var/www/divawidia.my.id && chmod -R 775 /var/www/divawidia.my.id/storage
+# Install PHP and JS dependencies
+RUN npm install && npm run build
+
+# Copy the existing application directory permissions to the working directory
+COPY --chown=www-data:www-data . /var/www/divawidia.my.id
 
 # Expose PHP-FPM port
 EXPOSE 9000
 
-# Start PHP-FPM and Nginx in foreground
+# Start PHP-FPM
 CMD ["php-fpm"]
