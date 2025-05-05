@@ -1,5 +1,8 @@
 FROM dunglas/frankenphp
 
+# Install system dependencies
+RUN apk add --no-cache git curl unzip libzip-dev oniguruma-dev autoconf gcc g++ make
+
 # Set working directory
 WORKDIR /var/www/personal-web
 
