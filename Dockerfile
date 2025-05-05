@@ -1,7 +1,7 @@
 FROM php:8.2-fpm-alpine
 
 # Set working directory
-WORKDIR /var/www/personal-web
+WORKDIR /var/www/divawidia.my.id
 
 # Install system dependencies
 RUN apk add --no-cache \
@@ -21,18 +21,18 @@ RUN apk add --no-cache \
 # RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Copy the existing application directory contents to the working directory
-COPY . .
+COPY . /var/www/divawidia.my.id
 
 # Install Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 # Install PHP and JS dependencies
-RUN composer install --no-dev --prefer-dist --optimize-autoloader \
+RUN composer install --no-dev --optimize-autoloader \
     && npm install \
     && npm run build
 
 # Set permissions
-RUN chown -R www-data:www-data /var/www/personal-web && chmod -R 775 /var/www/personal-web/storage
+RUN chown -R www-data:www-data /var/www/divawidia.my.id && chmod -R 775 /var/www/divawidia.my.id/storage
 
 # Expose PHP-FPM port
 EXPOSE 9000
