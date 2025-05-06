@@ -91,7 +91,7 @@ jobs:
             cd /var/www
             sudo docker compose pull
             sudo docker compose up -d --force-recreate
-            sudo docker compose exec app php artisan optimize:clear
-            sudo docker compose exec app php artisan config:cache
-            sudo docker compose exec app php artisan route:cache
-            sudo docker compose exec app php artisan view:cache
+            sudo docker compose exec personal-web-app php artisan optimize:clear
+            sudo docker compose exec personal-web-app php artisan config:cache
+            sudo docker compose exec personal-web-app php artisan route:cache
+            sudo docker compose exec personal-web-app php artisan view:cache
