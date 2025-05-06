@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: shivammathur/setup-php@15c43e89cdef867065b0213be354c2841860869e
+      - uses: shivammathur/setup-php@v2
         with:
           php-version: "8.2"
           extensions: mbstring, bcmath, sqlite, xml, curl, tokenizer, json
@@ -90,7 +90,7 @@ jobs:
           script: |
             cd /var/www/laravel-app
             sudo docker compose pull
-            sudo docker compose up -d --build
+            sudo docker compose up -d --force-recreate
             sudo docker compose exec app php artisan optimize:clear
             sudo docker compose exec app php artisan config:cache
             sudo docker compose exec app php artisan route:cache
