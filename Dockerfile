@@ -11,6 +11,11 @@ COPY --chown=www-data:www-data  . .
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
+    zlib1g-dev \
+    libpng-dev \
+    libjpeg62-turbo-dev \
+    libwebp-dev \
+    libxpm-dev \
     zip \
     unzip \
     git \
