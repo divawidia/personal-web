@@ -49,9 +49,9 @@ RUN composer require laravel/octane \
     && php artisan cache:clear \
     && php artisan octane:install --server=frankenphp
 
-# Fix permissions for storage and cache directories
-RUN chown -R www-data:www-data storage bootstrap/cache \
-    && chmod -R 775 storage bootstrap/cache \
+# Set permission for user and full read, write, and execute access for storage and bootstrap/cache folder
+RUN chown -R www-data:www-data /var/www/personal-web/storage /var/www/personal-web/bootstrap/cache \
+    && chmod -R 775 /var/www/personal-web/storage /var/www/personal-web/bootstrap/cache
 
 # Expose port 8000 internally
 EXPOSE 8000
