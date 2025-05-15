@@ -24,6 +24,7 @@ RUN apt-get update && apt-get install -y \
     unzip \
     sqlite3 \
     libsqlite3-dev \
+    npm \
     && docker-php-ext-configure gd --with-jpeg --with-webp --with-xpm \
     && docker-php-ext-install pdo pdo_sqlite gd zip bcmath opcache \
 
