@@ -11,20 +11,11 @@ COPY --chown=www-data:www-data  . .
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
-    libonig-dev \
-    libpng-dev \
-    libjpeg-dev \
-    libfreetype6-dev \
-    libicu-dev \
-    libzip-dev \
-    zlib1g-dev \
-    libwebp \
     zip \
     unzip \
     git \
     curl \
     sqlite3 \
-    libsqlite3-dev \
     && docker-php-ext-configure gd --with-jpeg --with-webp --with-xpm \
     && docker-php-ext-install pdo pdo_sqlite gd zip bcmath opcache \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
