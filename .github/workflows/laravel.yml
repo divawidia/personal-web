@@ -1,4 +1,4 @@
-name: Laravel CI/CD with Docker
+name: Project CI/CD with Docker
 
 on:
   push:
@@ -88,10 +88,13 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           port: 22
           script: |
-            cd /var/www
-            sudo docker compose pull
-            sudo docker compose up -d --force-recreate
-            sudo docker compose exec personal-web-app php artisan optimize:clear
-            sudo docker compose exec personal-web-app php artisan config:cache
-            sudo docker compose exec personal-web-app php artisan route:cache
-            sudo docker compose exec personal-web-app php artisan view:cache
+            cd /var/www/personal-web
+            docker compose pull
+            docker compose down
+            docker compose up -d --build
+            docker compose exec personal-web-app php artisan optimize:clear
+            docker compose exec personal-web-app php artisan config:cache
+            docker compose exec personal-web-app php artisan event:cache
+            docker compose exec personal-web-app php artisan route:cache
+            docker compose exec personal-web-app php artisan view:cache
+            docker image prune -a -f
