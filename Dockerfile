@@ -11,30 +11,26 @@ COPY --chown=www-data:www-data  . .
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
-    bash \
-    git \
-    curl \
-    libpng-dev \
-    libjpeg62-turbo-dev \
-    libwebp-dev \
-    libxpm-dev \
-    libzip-dev \
     libonig-dev \
+    libpng-dev \
+    libjpeg-dev \
+    libfreetype6-dev \
+    libicu-dev \
+    libzip-dev \
+    zlib1g-dev \
     zip \
     unzip \
+    git \
+    curl \
     sqlite3 \
     libsqlite3-dev \
-    npm \
     && docker-php-ext-configure gd --with-jpeg --with-webp --with-xpm \
     && docker-php-ext-install pdo pdo_sqlite gd zip bcmath opcache \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Install Node.js (change version if needed)
 RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
-    && apt-get install -y nodejs \
-    && npm install -g npm@latest
-
-# Clear cache
-RUN apt-get clean && rm -rf /var/lib/apt/lists/*
+    && apt-get install -y nodejs
 
 # Install Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
