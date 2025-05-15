@@ -18,6 +18,7 @@ RUN apt-get update && apt-get install -y \
     libicu-dev \
     libzip-dev \
     zlib1g-dev \
+    libwebp \
     zip \
     unzip \
     git \
