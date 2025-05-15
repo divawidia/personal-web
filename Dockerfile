@@ -41,15 +41,11 @@ COPY composer.json composer.lock ./
 RUN git config --global --add safe.directory /var/www/personal-web
 
 # Install laravel octane and other dependencies
-RUN composer require laravel/octane --no-interaction --no-progress --no-scripts --no-plugins\
-    && composer install --no-dev --optimize-autoloader --no-interaction --no-progress \
-
-# Install Node.js dependencies and build assets
-RUN npm install \
+RUN composer require laravel/octane \
+    && composer install --no-dev --optimize-autoloader \
+    && npm install \
     && npm run build \
-
-# Clear config, cache, and install laravel octane with frankenphp server
-RUN php artisan config:clear \
+    && php artisan config:clear \
     && php artisan cache:clear \
     && php artisan octane:install --server=frankenphp
 
