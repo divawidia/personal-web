@@ -17,7 +17,7 @@ sections:
       -
         id: m8nw2cq7
         role_name: 'UI/UX Designer'
-    summary: 'From France, Paris. I have rich experience in web design, also I am good at wordpress. I love to talk with you about our unique.'
+    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'
     button_text: 'Download CV'
     button_url: 'https://drive.google.com/file/d/1mHj86ZnEb0g8Kqa4kK-5syoc3M46BNfZ/view?usp=drive_link'
     profile_picture: profile2.png
@@ -99,14 +99,14 @@ sections:
     educations:
       -
         id: m8opebw3
-        school_name: 'CoderHouse Courses'
+        school_name: 'Lorem ipsum dolor'
         location: 'Bali, Indonesia'
         major: 'Backend Programming'
         start_date: '2025-01-01'
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
       -
         id: m8opgxkn
-        school_name: 'Lviv National Academy of Arts'
+        school_name: 'Lorem ipsum dolor'
         location: 'Bali, Indonesia'
         major: 'Backend Programming'
         start_date: '2025-02-01'
@@ -115,14 +115,14 @@ sections:
     experiences:
       -
         id: m8ophgke
-        place: 'UI Head & Manager'
+        place: 'Lorem ipsum dolor'
         location: 'Bali, Indonesia'
         role: 'Soft Tech Inc.'
         start_date: '2024-10-01'
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
       -
         id: m8opk4l2
-        place: 'UI / UX Specialist'
+        place: 'Lorem ipsum dolor'
         location: 'Bali, Indonesia'
         role: 'Kana Design Studio'
         start_date: '2024-11-01'
@@ -147,7 +147,7 @@ sections:
     type: contact_section
     enabled: true
 updated_by: 9777f40c-e866-44a6-a64b-1907a2ec929e
-updated_at: 1742954710
+updated_at: 1747377377
 ---
 ## Welcome to your brand new Statamic site!
 
