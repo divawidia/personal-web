@@ -1,0 +1,7 @@
+title: "Project's Design Approach"
+fields:
+  -
+    handle: projects_design_approach
+    field:
+      type: markdown
+      display: "Project's Design Approach"

@@ -1,0 +1,15 @@
+title: 'System Architecture Design'
+fields:
+  -
+    handle: architecture_image
+    field:
+      max_files: 1
+      min_files: 1
+      container: assets
+      type: assets
+      display: 'Architecture Image'
+  -
+    handle: explanations
+    field:
+      type: markdown
+      display: Explanations

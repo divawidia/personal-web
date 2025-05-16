@@ -1,0 +1,131 @@
+title: 'Tech Stack'
+fields:
+  -
+    handle: tech_stack_type
+    field:
+      type: replicator
+      display: 'Tech Stack Type'
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            ui_ux:
+              display: UI/UX
+              fields:
+                -
+                  handle: ui_ux
+                  field:
+                    taxonomies:
+                      - uiux
+                    type: terms
+                    display: UI/UX
+            front_end:
+              display: Front-End
+              fields:
+                -
+                  handle: front_end
+                  field:
+                    taxonomies:
+                      - front_end
+                    type: terms
+                    display: Front-End
+            back_end:
+              display: Back-End
+              fields:
+                -
+                  handle: back_end
+                  field:
+                    taxonomies:
+                      - back_end
+                    type: terms
+                    display: Back-End
+            database:
+              display: Database
+              fields:
+                -
+                  handle: database
+                  field:
+                    taxonomies:
+                      - database
+                    type: terms
+                    display: Database
+            file_storage:
+              display: 'File Storage'
+              fields:
+                -
+                  handle: file_storage
+                  field:
+                    taxonomies:
+                      - file_storage
+                    type: terms
+                    display: 'File Storage'
+            deployment:
+              display: Deployment
+              fields:
+                -
+                  handle: deployment
+                  field:
+                    taxonomies:
+                      - deployment
+                    type: terms
+                    display: Deployment
+            logging_monitoring:
+              display: 'Logging & Monitoring'
+              fields:
+                -
+                  handle: logging_monitoring
+                  field:
+                    taxonomies:
+                      - logging_monitoring
+                    type: terms
+                    display: 'Logging & Monitoring'
+            payment_gateaway:
+              display: 'Payment Gateaway'
+              fields:
+                -
+                  handle: payment_gateaway
+                  field:
+                    taxonomies:
+                      - payment_gateway
+                    type: terms
+                    display: 'Payment Gateaway'
+            notification_service:
+              display: 'Notification Service'
+              fields:
+                -
+                  handle: notification_service
+                  field:
+                    taxonomies:
+                      - notification_services
+                    type: terms
+                    display: 'Notification Service'
+            analytics:
+              display: Analytics
+              fields:
+                -
+                  handle: analytics
+                  field:
+                    taxonomies:
+                      - analytics
+                    type: terms
+                    display: Analytics
+            ci_cd:
+              display: CI/CD
+              fields:
+                -
+                  handle: ci_cd
+                  field:
+                    taxonomies:
+                      - cicd
+                    type: terms
+                    display: CI/CD
+            deep_learning_model:
+              display: 'Deep Learning Model'
+              fields:
+                -
+                  handle: deep_learning_model
+                  field:
+                    taxonomies:
+                      - deep_learning_model
+                    type: terms
+                    display: 'Deep Learning Model'

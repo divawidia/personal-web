@@ -1,0 +1,7 @@
+title: 'Key Feature'
+fields:
+  -
+    handle: projects_key_features
+    field:
+      type: markdown
+      display: "Project's Key Features"

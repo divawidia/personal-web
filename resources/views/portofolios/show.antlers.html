@@ -69,20 +69,16 @@
 <!-- Section - Description -->
 <section class="section section-inner">
     <div class="container py-5">
-        <div class="post-content">
-            <h3>Descriptions</h3>
-        </div>
-        <div class="post-content">
-            {{ description }}
-        </div>
-
+        {{ explanations }}
+            {{ partial src="partials/projects-explanation/{type}" }}
+        {{ /explanations }}
         <div class="post-content mt-5">
-            <h3>Technologies Used</h3>
+            <h3>Tech Stack</h3>
         </div>
         <div class="post-content">
-            {{ technology }}
-                <img height="60" src="{{ logo }}" alt="{{ title }}" class="mt-2 mx-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="{{ title }}"/>
-            {{ /technology }}
+            {{ tech_stack_type }}
+                {{ partial src="partials/tech-stacks/{type}" }}
+            {{ /tech_stack_type }}
         </div>
     </div>
 </section>
@@ -110,16 +106,3 @@
         </div>
     </div>
 </div>
-
-
-<!-- Section - Description -->
-<section class="section section-inner">
-    <div class="container">
-        <div class="post-content mt-5">
-            <h3>Features</h3>
-        </div>
-        <div class="post-content">
-            {{ features }}
-        </div>
-    </div>
-</section>

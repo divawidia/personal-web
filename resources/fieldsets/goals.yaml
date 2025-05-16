@@ -1,0 +1,7 @@
+title: Goals
+fields:
+  -
+    handle: projects_goal
+    field:
+      type: markdown
+      display: "Project's Goal"

@@ -1,0 +1,7 @@
+title: 'Problem Statement'
+fields:
+  -
+    handle: projects_problem_statement
+    field:
+      type: markdown
+      display: "Project's Problem Statement"

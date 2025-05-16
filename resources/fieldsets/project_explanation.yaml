@@ -1,0 +1,51 @@
+title: 'Project Explanation'
+fields:
+  -
+    handle: explanations
+    field:
+      type: replicator
+      display: Explanations
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            overview_section:
+              display: 'Overview Section'
+              fields:
+                -
+                  import: project_overview
+            problem_statement_section:
+              display: 'Problem Statement Section'
+              fields:
+                -
+                  import: problem_statement
+            goals_section:
+              display: 'Goals Section'
+              fields:
+                -
+                  import: goals
+            solutions_section:
+              display: 'Solutions Section'
+              fields:
+                -
+                  import: solutions
+            system_architecture_section:
+              display: 'System Architecture Section'
+              fields:
+                -
+                  import: system_architecture_design
+            database_section:
+              display: 'Database Section'
+              fields:
+                -
+                  import: database_schema
+            feature_section:
+              display: 'Feature Section'
+              fields:
+                -
+                  import: key_feature
+            design_approach_section:
+              display: 'Design Approach Section'
+              fields:
+                -
+                  import: projects_design_approach

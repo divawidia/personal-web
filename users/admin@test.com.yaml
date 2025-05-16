@@ -21,3 +21,6 @@ preferences:
         - full_name
         - subject
         - message
+  assets:
+    assets:
+      mode: grid

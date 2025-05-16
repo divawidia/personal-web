@@ -38,6 +38,10 @@ tabs:
               validate:
                 - required
           -
+            import: project_explanation
+          -
+            import: tech_stack
+          -
             handle: description
             field:
               type: markdown
@@ -121,11 +125,8 @@ tabs:
                 - categories
               display: Categories
               mode: select
-          -
-            handle: technology
-            field:
-              type: terms
-              taxonomies:
-                - technology
-              display: Technology
-              mode: select
+  new_tab:
+    display: 'New Tab'
+    sections:
+      -
+        display: 'New Section'

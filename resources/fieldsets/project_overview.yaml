@@ -1,0 +1,7 @@
+title: 'Project Overview'
+fields:
+  -
+    handle: projects_overview
+    field:
+      type: markdown
+      display: "Project's Overview"
