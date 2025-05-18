@@ -30,7 +30,7 @@
                     {{ /taxonomy:categories }}
                 </div>
                 <div class="works-items works-list-items row">
-                    {{ collection:portofolios as="portfolios" where="featured:true" limit="6"}}
+                    {{ collection:portofolios as="portfolios" where="featured:true"}}
                         {{ portfolios }}
                             <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 {{ categories }} {{ slug }} {{ /categories }}">
                                 <div class="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">

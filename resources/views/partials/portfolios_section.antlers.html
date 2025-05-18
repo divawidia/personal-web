@@ -27,7 +27,7 @@
 
 
                 <div class="works-items works-masonry-items row">
-                    {{ collection:portofolios as="portfolios" where="featured:true" limit="6"}}
+                    {{ collection:portofolios as="portfolios" where="featured:true"}}
                         {{ if no_results }}
                         <h4 class="text-center py-4">No Portfolios Yet</h4>
                         {{ /if }}
