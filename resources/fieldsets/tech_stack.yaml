@@ -129,3 +129,13 @@ fields:
                       - deep_learning_model
                     type: terms
                     display: 'Deep Learning Model'
+            version_controll:
+              display: 'Version Controll'
+              fields:
+                -
+                  handle: version_controll
+                  field:
+                    taxonomies:
+                      - version_control
+                    type: terms
+                    display: 'Version Controll'
