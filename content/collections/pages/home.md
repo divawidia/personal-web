@@ -17,7 +17,7 @@ sections:
       -
         id: m8nw2cq7
         role_name: 'UI/UX Designer'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'
+    summary: 'Passionate and Detail-oriented full-stack developer with more than 1 year of hands-on experience in designing, developing, deploying, and maintaining responsive websites. Proficient in PHP, Python, SQL, Javascript, and website frameworks such as Laravel, Vue, and Flask. Passionate about learning and staying updated with the latest app technologies, develop my skills and grow profesionally, committed to delivering high-quality projects on time.'
     button_text: 'Download CV'
     button_url: 'https://drive.google.com/file/d/1mHj86ZnEb0g8Kqa4kK-5syoc3M46BNfZ/view?usp=drive_link'
     profile_picture: profile2.png
@@ -38,21 +38,57 @@ sections:
       -
         id: m8nzq4hg
         title: 'UI/UX Design'
-        body: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
+        body: 'I design interfaces that are not only visually appealing but also intuitive and user-focused. I turn complex problems into simple, user-friendly experiences that keep users engaged and drive results.'
         subtitle: Design
-        icon: 'fas fa-desktop'
+        icon: 'fas fa-pen-nib'
       -
         id: m8nzs662
+        title: 'UI Design Slicing'
+        body: 'From design to functional frontend pixel perfect. I slice Figma or XD designs into responsive HTML, Tailwind, or Bootstrap components with precision and performance in mind.'
+        subtitle: 'Design, Software'
+        icon: 'fas fa-desktop'
+      -
+        id: m8nzt486
         title: 'Web Development'
-        body: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
+        body: "I build reliable, secure, and scalable web applications using modern frameworks. Whether it's a business website or a complex web platform, I deliver code that works smoothly."
         subtitle: Software
         icon: 'fas fa-code'
       -
-        id: m8nzt486
+        id: maxjs34h
         title: 'API Development'
-        body: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
+        body: 'Need your frontend and backend to talk seamlessly? I develop clean, secure, and well-documented APIs that enable smooth integrations between services and platforms.'
         subtitle: Software
         icon: 'fas fa-code'
+      -
+        id: maxk1gk5
+        title: 'Database Management'
+        body: 'From design to optimization, I manage your data with care. I ensure your database is structured, scalable, and secure to handle both current and future needs.'
+        subtitle: Database
+        icon: 'fas fa-database'
+      -
+        id: maxk32u4
+        title: 'Performance Optimization'
+        body: 'Slow websites cost users. I analyze and optimize your web application to reduce load times, improve responsiveness, and boost overall user experience.'
+        subtitle: Software
+        icon: 'fas fa-bolt'
+      -
+        id: maxk41i4
+        title: 'Server Management'
+        body: 'From VPS setup to deployment, I handle everything behind the scenes. I configure, deploy, and maintain your web applications using secure and efficient DevOps practices.'
+        subtitle: Server
+        icon: 'fas fa-server'
+      -
+        id: maxk4jji
+        title: 'Machine Learning / Deep Learning'
+        body: 'Exploring smart solutions? I experiment with ML/DL models for tasks like predictions, image processing, or data insights—integrating them into web apps when needed.'
+        subtitle: 'Artificial Intelegence'
+        icon: 'fas fa-robot'
+      -
+        id: maxk69vo
+        title: 'Data Scraping'
+        body: 'Need structured data from websites or online platforms? I build reliable scraping tools to extract and organize data from public sources—turning unstructured content into valuable, usable insights.'
+        subtitle: Data
+        icon: 'fas fa-database'
     type: services_section
     enabled: true
     heading_title: 'What I Do'
@@ -147,7 +183,7 @@ sections:
     type: contact_section
     enabled: true
 updated_by: 9777f40c-e866-44a6-a64b-1907a2ec929e
-updated_at: 1747377377
+updated_at: 1747808811
 ---
 ## Welcome to your brand new Statamic site!
 
