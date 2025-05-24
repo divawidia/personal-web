@@ -56,35 +56,7 @@
 @use "base/wrapper";
 
 /* - Breadcrumbs */
-
-.breadcrumbs {
-    position: relative;
-    margin-top: 0;
-    margin-bottom: 40px;
-    font-size: 0;
-    float: left;
-    z-index: 2;
-}
-
-.breadcrumbs a,
-.breadcrumbs span {
-    position: relative;
-    display: inline-block;
-    vertical-align: top;
-    font-size: 16px;
-    line-height: 19px;
-    color: #222;
-    text-decoration: none;
-}
-
-.breadcrumbs a {
-    color: #1979d5;
-    text-decoration: none;
-}
-
-.breadcrumbs a:hover {
-    text-decoration: underline;
-}
+@use "components/breadcrumbs";
 
 /* - Preloader */
 
