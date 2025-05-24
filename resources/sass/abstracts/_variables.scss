@@ -19,7 +19,7 @@ $light_default_bg: #f0ebe3;
 $light_second_bg: #ebe7e0;
 
 /* Colors */
-$light_default_color: #1c2528;
+$light_default_color: #262626;
 $light_white_color: #FFF;
 $light_dark_color: #000;
 $light_active_color: #29a587;
@@ -34,12 +34,13 @@ $light_error_color: red;
 */
 
 /* Fonts */
-$default_font: 'Rubik';
+$default_font: "Jost", sans-serif;
 $extra_font: 'Sorts Mill Goudy';
+$font_awesome: "Font Awesome 5 Free";
 
 /* Fonts Size */
 
-$default_size: 20px;
+$default_size: 16px;
 
 $section_h1_size: 138px;
 $section_h2_size: 100px;
@@ -51,11 +52,12 @@ $btn_size: 18px;
 $menu_size: 120px;
 $menu_sub_size: 40px;
 
-$title_h1_size: 49px;
-$title_h3_size: 39px;
-$title_h4_size: 29px;
+$title_h1_size: 44px;
+$title_h2_size: 41px;
+$title_h3_size: 38px;
+$title_h4_size: 32px;
 $title_h5_size: 24px;
-$title_h6_size: 20px;
+$title_h6_size: 21px;
 
 /* Fonts Weight */
 $font_weight: 300;
@@ -63,31 +65,7 @@ $font_weight: 300;
 /* Line Height */
 $line_height: 1.5;
 
-/*Mixins*/
-@mixin border-radius($radius) {
-    border-radius: $radius;
-    -moz-border-radius: $radius;
-    -webkit-border-radius: $radius;
-    -khtml-border-radius: $radius;
-}
-
-@mixin box-shadow($param) {
-    box-shadow: $param;
-    -moz-box-shadow: $param;
-    -webkit-box-shadow: $param;
-    -khtml-box-shadow: $param;
-}
-
-@mixin transition($param) {
-    transition: $param;
-    -moz-transition: $param;
-    -webkit-transition: $param;
-    -o-transition: $param;
-}
-
-@mixin transform($param) {
-    transform: $param;
-    -webkit-transform: $param;
-    -moz-transform: $param;
-    -o-transform: $param;
-}
+/* Transition */
+$transition-long: all 0.7s cubic-bezier(0.3, 0, 0.3, 1);
+$transition-short: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
+$transition-btn: all 0.6s cubic-bezier(0.3, 0, 0.3, 1);
