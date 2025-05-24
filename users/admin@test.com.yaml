@@ -22,3 +22,6 @@ preferences:
         - subject
         - message
   theme: light
+  assets:
+    assets:
+      mode: grid

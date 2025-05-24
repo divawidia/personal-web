@@ -114,10 +114,75 @@ sections:
         tool_name: Python
         proficiency_percentage: 80
       -
+        id: maxkcy3n
+        tool_logo: flask-logo-png-transparent.png
+        tool_name: Flask
+        proficiency_percentage: 80
+      -
         id: m8o16acg
         tool_logo: javascript-logo.png
         tool_name: Javascript
-        proficiency_percentage: 70
+        proficiency_percentage: 75
+      -
+        id: maxlhig6
+        tool_logo: jquery-original-wordmark-icon-485x512-7kn0h2yt.png
+        tool_name: JQuery
+        proficiency_percentage: 80
+      -
+        id: maxlzb6l
+        tool_logo: vue-logo.png
+        tool_name: VueJS
+        proficiency_percentage: 80
+      -
+        id: maxkdy0s
+        tool_logo: html5_logo_512.png
+        tool_name: HTML
+        proficiency_percentage: 85
+      -
+        id: maxkfbrq
+        tool_logo: css-logo.png
+        tool_name: CSS
+        proficiency_percentage: 85
+      -
+        id: maxm0xep
+        tool_logo: sass.png
+        tool_name: SASS
+        proficiency_percentage: 85
+      -
+        id: maxkfzkq
+        tool_logo: bootstrap_logo.svg.png
+        tool_name: Bootstrap
+        proficiency_percentage: 85
+      -
+        id: maxlgzlc
+        tool_logo: tailwind-css.svg
+        tool_name: Tailwind
+        proficiency_percentage: 75
+      -
+        id: maxm2id6
+        tool_logo: figma-1-logo-png-transparent.png
+        tool_name: Figma
+        proficiency_percentage: 85
+      -
+        id: maxm4i9s
+        tool_logo: adobe_xd_cc_icon.svg.png
+        tool_name: 'Adobe XD'
+        proficiency_percentage: 75
+      -
+        id: maxm7qdl
+        tool_logo: postman-logo-removebg-preview.png
+        tool_name: Postman
+        proficiency_percentage: 80
+      -
+        id: maxm8b1t
+        tool_logo: swagger-removebg-preview.png
+        tool_name: Swagger
+        proficiency_percentage: 80
+      -
+        id: maxm8vxy
+        tool_logo: pngimg.com---mysql_png23.png
+        tool_name: MySQL
+        proficiency_percentage: 85
     type: skills_section
     enabled: true
   -
@@ -183,7 +248,7 @@ sections:
     type: contact_section
     enabled: true
 updated_by: 9777f40c-e866-44a6-a64b-1907a2ec929e
-updated_at: 1747808811
+updated_at: 1747812238
 ---
 ## Welcome to your brand new Statamic site!
 
