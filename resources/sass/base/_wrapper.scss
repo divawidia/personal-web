@@ -1,0 +1,110 @@
+.container-page {
+    position: relative;
+    overflow: hidden;
+    min-height: 50vh;
+}
+
+.wrapper,
+.container {
+    position: relative;
+}
+
+.container {
+    max-width: 1300px;
+}
+
+.lui-section {
+    padding-bottom: 220px;
+}
+
+.disabled {
+    display: none;
+}
+
+.v-line-block {
+    position: absolute;
+    left: -100px;
+    top: -70px;
+    bottom: -30px;
+    width: 2px;
+    background: #000;
+    z-index: 3;
+    pointer-events: none;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background: #fff;
+        border: 2px solid #000;
+        border-radius: 30px;
+        box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    &::before {
+        left: -15px;
+        top: -15px;
+    }
+
+    &::after {
+        left: -15px;
+        bottom: -15px;
+    }
+
+    span {
+        position: absolute;
+        bottom: -188px;
+        left: -168px;
+        width: 226px;
+        height: 226px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: block;
+    }
+}
+
+.v-line-left {
+    .v-line-block {
+        left: -100px;
+        right: auto;
+    }
+}
+
+.v-line-right {
+    .v-line-block {
+        left: auto;
+        right: -100px;
+
+        span {
+            left: auto;
+            right: -168px;
+        }
+    }
+}
+
+.v-line-top {
+    .v-line-block {
+        span {
+            bottom: auto;
+            top: -188px;
+        }
+    }
+}
+
+.hero-started {
+    .v-line-block {
+        bottom: -70px;
+    }
+}
+
+.portfolio-template {
+    .wrapper {
+        .v-line-block {
+            top: 0;
+            bottom: -600px;
+        }
+    }
+}
