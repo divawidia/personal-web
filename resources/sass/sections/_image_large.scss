@@ -1,0 +1,37 @@
+@use "../abstracts/variables";
+
+.section {
+    &.section-inner {
+        &.m-image-large {
+            z-index: 3;
+
+            .v-line-block {
+                top: -143px;
+                bottom: -577px;
+            }
+        }
+    }
+}
+
+.m-image-large {
+    .image {
+        position: relative;
+        width: 100%;
+        height: 740px;
+
+        img {
+            max-width: 100%;
+        }
+
+        .img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+    }
+}
