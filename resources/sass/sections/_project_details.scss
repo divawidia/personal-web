@@ -1,0 +1,29 @@
+@use "../abstracts/variables";
+
+.m-details {
+    margin-left: -90px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .details-label {
+        margin-left: 90px;
+        margin-bottom: 30px;
+
+        > span {
+            font-family: variables.$extra_font;
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        strong {
+            display: block;
+            font-weight: 400;
+        }
+    }
+}
+
+.portfolio-template {
+    p {
+        margin-top: 0;
+    }
+}

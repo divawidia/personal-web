@@ -113,32 +113,7 @@
 /**
 * Section Project Details
 **/
-
-.m-details {
-    margin-left: -90px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.m-details .details-label {
-    margin-left: 90px;
-    margin-bottom: 30px;
-}
-
-.m-details .details-label > span {
-    font-family: "Caveat";
-    font-size: 30px;
-    font-weight: 700;
-}
-
-.m-details .details-label strong {
-    display: block;
-    font-weight: 400;
-}
-
-.portfolio-template p {
-    margin-top: 0;
-}
+@use "sections/project_details";
 
 /**
 * Section Image Large
