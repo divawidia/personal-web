@@ -1,0 +1,193 @@
+@use "../abstracts/variables";
+
+.skills-items {
+    position: relative;
+    z-index: 2;
+}
+.skills-item {
+    margin-bottom: 70px;
+    position: relative;
+    &:first-child {
+        margin-top: 0;
+    }
+    .name {
+        margin: 0 30px 20px 30px;
+        line-height: 20px;
+    }
+    .text {
+        margin: 0 30px 30px 30px;
+        p {
+            margin: 0;
+        }
+    }
+    .dots {
+        position: relative;
+        height: 2px;
+        background: rgba(0, 0, 0, 0.1);
+        .dot {
+            position: relative;
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #000;
+            transition: variables.$transition-btn;
+            -webkit-transition: variables.$transition-btn;
+            span {
+                border: 2px solid #000;
+                border-radius: 50%;
+                background-color: variables.$active_color;
+                box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+                position: absolute;
+                right: 0;
+                top: -12px;
+                width: 25px;
+                height: 25px;
+                &:before {
+                    margin-top: -5px;
+                    margin-left: -5px;
+                    border: 2px solid #000;
+                    border-radius: 50%;
+                    background-color: variables.$white_color;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+        }
+    }
+    .value {
+        position: absolute;
+        top: 0;
+        right: 30px;
+        .num {
+            display: inline-block;
+            vertical-align: top;
+            font-weight: 700;
+            color: variables.$dark_color;
+            height: 20px;
+            line-height: 20px;
+            span {
+                color: variables.$active_color;
+            }
+        }
+    }
+}
+.history-title {
+    margin: 0;
+    padding: 0 0 30px 0;
+    line-height: 1;
+    text-align: center;
+    border-bottom: 2px solid #000;
+}
+.history-items {
+    position: relative;
+    z-index: 2;
+}
+.history-item {
+    position: relative;
+    border-bottom: 2px solid #000;
+    border-right: 2px solid #000;
+    &:first-child {
+        border-right: 2px solid transparent;
+    }
+    .history-content {
+        padding: 0 50px 0 30px;
+        position: relative;
+        overflow: hidden;
+        max-height: 1px;
+        transition: all 1s ease 0s;
+        -webkit-transition: all 1s ease 0s;
+    }
+    &:nth-child(1) {
+        z-index: 20;
+    }
+    &:nth-child(2) {
+        z-index: 19;
+    }
+    &:nth-child(3) {
+        z-index: 18;
+    }
+    &:nth-child(4) {
+        z-index: 17;
+    }
+    &:nth-child(5) {
+        z-index: 16;
+    }
+    &:nth-child(6) {
+        z-index: 15;
+    }
+    &:nth-child(7) {
+        z-index: 14;
+    }
+    &:nth-child(8) {
+        z-index: 13;
+    }
+    &:nth-child(9) {
+        z-index: 12;
+    }
+    &:nth-child(10) {
+        z-index: 11;
+    }
+    .name {
+        margin: 0;
+        padding: 30px;
+        cursor: pointer;
+        &:after {
+            content: "-";
+            content: "+";
+            position: absolute;
+            right: -24px;
+            bottom: -24px;
+            width: 48px;
+            height: 48px;
+            line-height: 40px;
+            background: #fff;
+            border-radius: 50%;
+            border: 2px solid #000;
+            box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+            font-weight: 400;
+            font-size: 30px;
+            text-align: center;
+            transition: all 1.2s cubic-bezier(0.3, 0, 0.3, 1);
+            -webkit-transition: all 1.2s cubic-bezier(0.3, 0, 0.3, 1);
+            z-index: 2;
+        }
+        &:hover {
+            &:after {
+                box-shadow: 0 0 rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+    .name.active {
+        &:after {
+            content: "-";
+            background: #f0ebe3;
+        }
+    }
+    .subname {
+        float: left;
+        font-family: variables.$extra_font;
+        font-size: 28px;
+        line-height: 40px;
+        font-weight: 700;
+        color: variables.$dark_color;
+    }
+    .date {
+        float: right;
+        line-height: 46px;
+    }
+    .text {
+        padding: 15px 0 30px 0;
+        clear: both;
+        p {
+            margin: 0;
+        }
+    }
+}
+.history-item.opened {
+    .history-content {
+        max-height: 1000px;
+    }
+}
