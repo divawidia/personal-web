@@ -1,0 +1,85 @@
+@use "../abstracts/variables";
+
+.post-content {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+    }
+
+    figure {
+        max-width: 100%;
+        height: auto;
+    }
+
+    p img,
+    figure img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    ol,
+    ul {
+        color: #000;
+
+        ol,
+        ul {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    &:after {
+        content: "";
+        position: relative;
+        display: block;
+        clear: both;
+    }
+}
+
+.news__paragraph_clear {
+    &:after {
+        content: "";
+        position: relative;
+        display: block;
+        clear: both;
+    }
+}
+
+.header__builder,
+.hf_templates-template {
+    .menu-btn {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+.menu-overlay {
+    position: absolute;
+    right: 100%;
+    top: 0;
+    width: 1000%;
+    height: 100%;
+}
+
+.menu-full {
+    ul {
+        li {
+            ul {
+                li {
+                    ul,
+                    &.opened ul {
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        padding: 20px;
+                        background: #eaeaea;
+                    }
+                }
+            }
+        }
+    }
+}
