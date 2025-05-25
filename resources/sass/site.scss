@@ -73,68 +73,8 @@
 /**
 * Footer
 **/
+@use "layout/footer";
 
-.lui-contacts .container {
-    max-width: 1180px;
-}
-
-.footer {
-    margin: 0;
-    padding: 60px 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.footer.footer-default {
-    padding: 60px 0;
-}
-
-.footer .copyright-text,
-.footer .footer-heading {
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    line-height: 37px;
-}
-
-.footer .copyright-text strong,
-.footer .footer-heading strong,
-.footer .copyright-text b,
-.footer .footer-heading b {
-    color: #29a587;
-}
-
-.footer .copyright-text p,
-.footer .footer-heading p {
-    margin: 0;
-}
-
-.footer .copyright-text a,
-.footer .footer-heading a {
-    color: #000;
-}
-
-.footer .copyright-text a:hover,
-.footer .footer-heading a:hover {
-    color: #29a587;
-}
-
-.social-links a {
-    margin-top: 0;
-    margin-right: 15px;
-    margin-left: 0;
-    position: relative;
-    display: inline-block;
-    vertical-align: top;
-    font-size: 22px;
-    color: #000;
-    font-weight: 900;
-    text-decoration: none;
-}
-
-.social-links a:hover {
-    color: #29a587;
-}
 
 /**
 * Sections

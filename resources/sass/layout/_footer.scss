@@ -1,0 +1,62 @@
+@use "../abstracts/variables";
+
+.lui-contacts {
+    .container {
+        max-width: 1180px;
+    }
+}
+
+.footer {
+    margin: 0;
+    padding: 60px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+    &.footer-default {
+        padding: 60px 0;
+    }
+
+    .copyright-text,
+    .footer-heading {
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        line-height: 37px;
+
+        strong,
+        b {
+            color: variables.$active_color;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        a {
+            color: #000;
+
+            &:hover {
+                color: variables.$active_color;
+            }
+        }
+    }
+}
+
+.social-links {
+    a {
+        margin-top: 0;
+        margin-right: 15px;
+        margin-left: 0;
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        font-size: 22px;
+        color: #000;
+        font-weight: 900;
+        text-decoration: none;
+
+        &:hover {
+            color: variables.$active_color;
+        }
+    }
+}
