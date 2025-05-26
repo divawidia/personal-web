@@ -5,14 +5,34 @@
     z-index: 2;
 }
 .skills-item {
-    margin-bottom: 70px;
     position: relative;
+    margin-bottom: 2rem;
+    padding: 20px;
+    background: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:hover{
+        transform: translate(-10px, -10px);
+        border: 2px solid variables.$active_color;
+        box-shadow: 15px 15px 30px -15px variables.$active_color;
+        transition: all 0.7s ease;
+    }
+
+    img {
+        max-width: 100%;
+        max-height: 50px;
+    }
+
     &:first-child {
         margin-top: 0;
     }
     .name {
-        margin: 0 30px 20px 30px;
+        margin: 20px 30px 0 30px;
         line-height: 20px;
+        text-align: center;
     }
     .text {
         margin: 0 30px 30px 30px;
@@ -72,6 +92,17 @@
                 color: variables.$active_color;
             }
         }
+    }
+
+    .category {
+        position: relative;
+        margin-bottom: 1rem;
+        display: block;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        color: variables.$active_color;
     }
 }
 .history-title {

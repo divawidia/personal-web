@@ -30,7 +30,7 @@
         background-size: contain;
     }
     &:hover{
-        transform: translate(-15px, -15px);
+        transform: translate(-10px, -10px);
         border: 2px solid variables.$active_color;
         box-shadow: 15px 15px 30px -15px variables.$active_color;
         transition: all 0.7s ease;
