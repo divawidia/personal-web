@@ -15,21 +15,25 @@
 
     <!-- Skills -->
     <div class="v-line v-line-left">
-        <div class="container">
-            <div class="row">
+        <div class="container skills-box">
+            <div class="filter-links scrolla-element-anim-1 scroll-animate" data-animate="active">
+                <a href="#" class="lui-subtitle active" data-href=".skills-col">All</a>
+                {{ taxonomy:technical_skills }}
+                <a href="#" class="lui-subtitle" data-href=".{{ slug }}">{{ title }}</a>
+                {{ /taxonomy:technical_skills }}
+            </div>
+            <div class="skills-items row">
                 {{ skills }}
-                    <div class="col-4 col-md-3 col-lg-2">
-                        <div class="skills-items">
+                    <div class="skills-col col-4 col-md-3 col-lg-2 {{ technical_skills }} {{ slug }} {{ /technical_skills }}">
                             <div class="skills-item scrolla-element-anim-1 scroll-animate" data-animate="active">
 
-                                <span class="category"><span class="tags">Front-End</span></span>
+                                <span class="category">{{ technical_skills }}  <span class="tags">{{ title }}</span> {{ /technical_skills }}</span>
                                 <img src="{{ tool_logo }}" alt="{{ tool_name }}"/>
                                 <h6 class="name">
                                     <span>{{ tool_name }}</span>
                                 </h6>
 
                             </div>
-                        </div>
                     </div>
                 {{ /skills }}
             </div>

@@ -234,42 +234,45 @@ import "splitting/dist/splitting-cells.css";
         });
 
 
+        function filterItems(itemsClass, itemsCol, filterClass) {
+            /*
+                Initialize items
+            */
+            var $container = $(itemsClass);
+            $container.imagesLoaded(function () {
+                $container.isotope({
+                    itemSelector: itemsCol,
+                    percentPosition: true,
+                });
+            });
+
+            /*
+                Filter items on button click
+            */
+            $(filterClass).on("click", "a", function () {
+                var filterValue = $(this).attr("data-href");
+                $container.isotope({ filter: filterValue });
+
+                $(filterClass+" a").removeClass("active");
+                $(this).addClass("active");
+
+                if (!$(filterValue).find(".scroll-animate").hasClass("animate__active")) {
+                    $(filterValue).find(".scroll-animate").addClass("animate__active");
+                }
+
+                return false;
+            });
+        }
 
         /*
-            Initialize portfolio items
+            Filter portfolios items
         */
-        var $container = $(".works-items");
-        $container.imagesLoaded(function () {
-            $container.isotope({
-                itemSelector: ".works-col",
-                percentPosition: true,
-            });
-        });
-
-        var $gal_container = $(".m-gallery");
-        $gal_container.imagesLoaded(function () {
-            $gal_container.isotope({
-                itemSelector: ".col-lg-6",
-                percentPosition: true,
-            });
-        });
-
+        filterItems(".works-items", ".works-col", ".works-box .filter-links");
         /*
-            Filter items on button click
+            Filter skills items
         */
-        $(".filter-links").on("click", "a", function () {
-            var filterValue = $(this).attr("data-href");
-            $container.isotope({ filter: filterValue });
+        filterItems(".skills-items", ".skills-col", ".skills-box .filter-links");
 
-            $(".filter-links a").removeClass("active");
-            $(this).addClass("active");
-
-            if (!$(filterValue).find(".scroll-animate").hasClass("animate__active")) {
-                $(filterValue).find(".scroll-animate").addClass("animate__active");
-            }
-
-            return false;
-        });
 
         $(".has-popup-image").magnificPopup({
             type: "image",

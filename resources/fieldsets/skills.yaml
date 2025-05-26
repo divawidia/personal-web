@@ -40,13 +40,9 @@ fields:
             validate:
               - required
         -
-          handle: proficiency_percentage
+          handle: technical_skills
           field:
-            input_type: number
-            character_limit: 100
-            type: text
-            display: 'Proficiency Percentage'
-            validate:
-              - required
-              - 'min:0'
-              - 'max:100'
+            taxonomies:
+              - technical_skills
+            type: terms
+            display: 'Technical Skills'

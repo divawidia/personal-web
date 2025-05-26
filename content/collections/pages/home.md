@@ -103,92 +103,240 @@ sections:
         tool_logo: php-1-logo-png-transparent.png
         tool_name: PHP
         proficiency_percentage: 85
+        technical_skills:
+          - back-end
+          - language
       -
         id: m8o10tj4
         tool_logo: laravel-logo-9b01588b1f-seeklogo.com.png
         tool_name: Laravel
         proficiency_percentage: 85
+        technical_skills:
+          - back-end
+          - framework
       -
         id: m8o13acn
         tool_logo: python-d9875d0b3dc4331db8ea594322537b8f38a87acf8fe4e2fb7c4c83950b31cd3e.png
         tool_name: Python
         proficiency_percentage: 80
+        technical_skills:
+          - deep-learning
+          - back-end
+          - language
+      -
+        id: mb4mcox5
+        tool_logo: tensorflow-logo-png_seeklogo-335704.png
+        tool_name: Tensorflow
+        technical_skills:
+          - deep-learning
       -
         id: maxkcy3n
         tool_logo: flask-logo-png-transparent.png
         tool_name: Flask
         proficiency_percentage: 80
+        technical_skills:
+          - back-end
+          - framework
       -
         id: m8o16acg
         tool_logo: javascript-logo.png
         tool_name: Javascript
         proficiency_percentage: 75
+        technical_skills:
+          - front-end
+          - language
       -
         id: maxlhig6
         tool_logo: jquery-original-wordmark-icon-485x512-7kn0h2yt.png
         tool_name: JQuery
         proficiency_percentage: 80
+        technical_skills:
+          - front-end
       -
         id: maxlzb6l
         tool_logo: vue-logo.png
         tool_name: VueJS
         proficiency_percentage: 80
+        technical_skills:
+          - front-end
+          - framework
       -
         id: maxkdy0s
         tool_logo: html5_logo_512.png
         tool_name: HTML
         proficiency_percentage: 85
+        technical_skills:
+          - front-end
       -
         id: maxkfbrq
         tool_logo: css-logo.png
         tool_name: CSS
         proficiency_percentage: 85
+        technical_skills:
+          - front-end
       -
         id: maxm0xep
         tool_logo: sass.png
         tool_name: SASS
         proficiency_percentage: 85
+        technical_skills:
+          - front-end
       -
         id: maxkfzkq
         tool_logo: bootstrap_logo.svg.png
         tool_name: Bootstrap
         proficiency_percentage: 85
+        technical_skills:
+          - front-end
+          - framework
       -
         id: maxlgzlc
         tool_logo: tailwind-css.svg
         tool_name: Tailwind
         proficiency_percentage: 75
+        technical_skills:
+          - front-end
+          - framework
       -
         id: maxm2id6
         tool_logo: figma-1-logo-png-transparent.png
         tool_name: Figma
         proficiency_percentage: 85
+        technical_skills:
+          - uiux
       -
         id: maxm4i9s
         tool_logo: adobe_xd_cc_icon.svg.png
         tool_name: 'Adobe XD'
         proficiency_percentage: 75
+        technical_skills:
+          - uiux
       -
         id: maxm7qdl
         tool_logo: postman-logo-removebg-preview.png
         tool_name: Postman
         proficiency_percentage: 80
+        technical_skills:
+          - api
       -
         id: maxm8b1t
         tool_logo: swagger-removebg-preview.png
         tool_name: Swagger
         proficiency_percentage: 80
+        technical_skills:
+          - api
       -
         id: maxm8vxy
         tool_logo: pngimg.com---mysql_png23.png
         tool_name: MySQL
         proficiency_percentage: 85
+        technical_skills:
+          - database
+      -
+        id: mb4l1y91
+        tool_logo: postgresql_elephant.png
+        tool_name: PostgreSQL
+        technical_skills:
+          - database
+      -
+        id: mb4l4vr8
+        tool_logo: mongodb-logo-png_seeklogo-481256.png
+        tool_name: MongoDB
+        technical_skills:
+          - database
+      -
+        id: mb4l7wxp
+        tool_logo: sql-logo.webp
+        tool_name: SQL
+        technical_skills:
+          - language
+      -
+        id: mb4lahs9
+        tool_logo: ruby_logo.png
+        tool_name: Ruby
+        technical_skills:
+          - back-end
+          - language
+      -
+        id: mb4ld8fq
+        tool_logo: ruby_on_rails_logo.png
+        tool_name: 'Ruby on Rails'
+        technical_skills:
+          - back-end
+          - framework
+      -
+        id: mb4ldr06
+        tool_logo: microsoft_azure.png
+        tool_name: 'Microsoft Azure'
+        technical_skills:
+          - cloud-deployment
+          - devops
+      -
+        id: mb4lhum5
+        tool_logo: google-cloud.png
+        tool_name: 'Google Cloud Platforms'
+        technical_skills:
+          - cloud-deployment
+          - devops
+      -
+        id: mb4ljgdy
+        tool_logo: amazon_web_services_logo.png
+        tool_name: 'Amazon Web Services'
+        technical_skills:
+          - devops
+          - cloud-deployment
+      -
+        id: mb4lmg9j
+        tool_logo: docker_logo.webp
+        tool_name: Docker
+        technical_skills:
+          - devops
+          - cloud-deployment
+      -
+        id: mb4lti8s
+        tool_logo: github-actions.png
+        tool_name: 'Github Actions'
+        technical_skills:
+          - cloud-deployment
+          - devops
+      -
+        id: mb4lu9h4
+        tool_logo: cpanel-logo.png
+        tool_name: CPanel
+        technical_skills:
+          - devops
+          - cloud-deployment
+      -
+        id: mb4lx15b
+        tool_logo: cloudpanel.svg
+        tool_name: CloudPanel
+        technical_skills:
+          - cloud-deployment
+          - devops
+      -
+        id: mb4lz0qj
+        tool_logo: ubuntu-logo-vector.svg
+        tool_name: Ubuntu
+        technical_skills:
+          - server
+      -
+        id: mb4m0ctu
+        tool_logo: git_icon.png
+        tool_name: Git
+        technical_skills:
+          - version-control
+      -
+        id: mb4m7smu
+        tool_logo: 25231.png
+        tool_name: GitHub
+        technical_skills:
+          - version-control
     type: skills_section
     enabled: true
   -
     id: m8oe1j5d
     heading_title: Portfolios
-    heading_subtitle: 'my <b>Projects</b>'
+    heading_subtitle: 'my <b>Recent Projects</b>'
     portfolios:
       - portofolios
     type: portfolios_section
@@ -248,7 +396,7 @@ sections:
     type: contact_section
     enabled: true
 updated_by: 9777f40c-e866-44a6-a64b-1907a2ec929e
-updated_at: 1747812238
+updated_at: 1748235739
 ---
 ## Welcome to your brand new Statamic site!
 
