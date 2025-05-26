@@ -17,15 +17,15 @@
     <!-- Certificate -->
     <div class="v-line v-line-right">
         <div class="container">
-            <div class="works-box">
+            <div class="certificates-box">
                 <div class="filter-links scrolla-element-anim-1 scroll-animate" data-animate="active">
                     <a href="#" class="lui-subtitle active" data-href=".certificates-col">All</a>
-                    {{ taxonomy:categories }}
+                    {{ taxonomy:certificate_categories }}
                         <a href="#" class="lui-subtitle" data-href=".{{ slug }}">{{ title }}</a>
-                    {{ /taxonomy:categories }}
+                    {{ /taxonomy:certificate_categories }}
                 </div>
 
-                <div class="works-items works-masonry-items row">
+                <div class="certificates-items certificates-masonry-items row">
                     {{ collection:certificates as="certificates" where="featured:true" limit="6" }}
 
                         {{ if no_results }}
@@ -33,8 +33,8 @@
                         {{ /if }}
 
                         {{ certificates }}
-                            <div class="certificates-col col-xs-12 col-sm-12 col-md-12 col-lg-12 {{ categories }} {{ slug }} {{ /categories }}">
-                                <div class="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                            <div class="certificates-col col-xs-12 col-sm-12 col-md-12 col-lg-12 {{ certificate_categories }} {{ slug }} {{ /certificate_categories }}">
+                                <div class="certificates-item scrolla-element-anim-1 scroll-animate" data-animate="active">
                                     <div class="image">
                                         <div class="img">
                                             <a href="{{ certificate_url }}">
@@ -44,9 +44,9 @@
                                         </div>
                                     </div>
                                     <div class="desc">
-                                        <span class="category">{{ categories }}  <span class="tags">{{ title }}</span> {{ /categories }}</span>
+                                        <span class="category">{{ certificate_categories }}  <span class="tags">{{ title }}</span> {{ /certificate_categories }}</span>
                                         <h5 class="name">
-                                            <a href="{{ certificate_url }}">{{ title }} </a>
+                                            <a href="{{ certificate_url }}">{{ title }} - {{ year }}</a>
                                         </h5>
                                         <a href="{{ certificate_url }}" class="lnk">View Certificates</a>
                                     </div>
@@ -54,16 +54,17 @@
                                 </div>
                             </div>
                         {{ /certificates }}
+
+                        {{ if certificates count=">6" }}
+                            <div class="load-more-link">
+                                <a href="{{ nav handle='navbar' }}/certificates" class="btn scrolla-element-anim-1 scroll-animate my-4" data-animate="active">
+                                    <span>View More</span>
+                                </a>
+                            </div>
+                        {{ /if }}
                     {{ /collection:certificates }}
                 </div>
 
-                {{ if collection:certificates count=">6" }}
-                    <div class="load-more-link">
-                        <a href="{{ nav handle='navbar' }}/certificates" class="btn scrolla-element-anim-1 scroll-animate" data-animate="active">
-                            <span>View More</span>
-                        </a>
-                    </div>
-                {{ /if }}
             </div>
 
             <div class="lui-bgtitle">

@@ -125,8 +125,3 @@ tabs:
                 - categories
               display: Categories
               mode: select
-  new_tab:
-    display: 'New Tab'
-    sections:
-      -
-        display: 'New Section'

@@ -13,6 +13,12 @@ preferences:
         - short_description
         - thumbnail
         - year
+    certificates:
+      columns:
+        - title
+        - slug
+        - status
+        - year
   forms:
     contact:
       columns:

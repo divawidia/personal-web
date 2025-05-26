@@ -25,7 +25,7 @@ body.dark-skin {
 }
 
 body.dark-skin {
-    background-color: #222831;
+    background-color: #222831 !important;
 }
 
 /*.dark-skin a {
@@ -467,42 +467,75 @@ body.dark-skin {
 * Section Works
 **/
 
-.dark-skin .filter-links a {
-    color: #fff;
-}
+.dark-skin {
+    .filter-links {
+        a {
+            color: #fff;
 
-.dark-skin .filter-links a.active {
-    color: #29a587;
-}
+            &.active {
+                color: #29a587;
+            }
+        }
+    }
 
-.dark-skin .works-item .image:before,
-.dark-skin .works-item .image:after {
-    background: #222831;
-}
+    .works-item {
+        .image {
+            &::before,
+            &::after {
+                background: #222831;
+            }
 
-.dark-skin .works-item .image .img:before,
-.dark-skin .works-item .image .img:after {
-    background: #222831;
-}
+            .img {
+                &::before,
+                &::after {
+                    background: #222831;
+                }
+            }
+        }
 
-.dark-skin .works-items.works-list-items .works-item .desc .name {
-    color: #fff;
-}
+        &:hover {
+            .desc {
+                .name {
+                    a {
+                        color: #29a587;
+                    }
+                }
+            }
+        }
+    }
 
-.dark-skin .works-items.works-list-items .works-item .desc .name a {
-    color: #fff;
-}
+    .works-items,
+    .certificates-items {
+        &.works-list-items {
+            .works-item {
+                .desc {
+                    .name {
+                        color: #fff;
 
-.dark-skin .works-items.works-masonry-items .works-item {
-    background: #1d222a;
-}
+                        a {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
 
-.dark-skin .works-items.works-masonry-items .works-item .desc .name a {
-    color: #fff;
-}
+        &.works-masonry-items,
+        &.certificates-masonry-items {
+            .works-item,
+            .certificates-item {
+                background: #1d222a;
 
-.dark-skin .works-item:hover .desc .name a {
-    color: #29a587;
+                .desc {
+                    .name {
+                        a {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 /**

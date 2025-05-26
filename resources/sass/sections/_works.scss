@@ -1,6 +1,7 @@
 @use "../abstracts/variables";
 
-.works-box {
+.works-box,
+.certificates-box {
     margin-left: -20px;
     margin-right: -20px;
     position: relative;
@@ -50,7 +51,8 @@
     }
 }
 
-.works-item {
+.works-item,
+.certificates-item {
     position: relative;
     overflow: hidden;
 
@@ -169,12 +171,16 @@
     }
 }
 
-.works-items {
-    &.works-list-items {
+.works-items,
+.certificates-items {
+
+    &.works-list-items,
+    &.certificates-list-items {
         margin-top: -100px;
         position: relative;
 
-        .works-item {
+        .works-item,
+        .certificates-item {
             margin-top: 100px;
 
             .image {
@@ -220,18 +226,21 @@
         }
     }
 
-    &.works-masonry-items {
+    &.works-masonry-items,
+    &.certificates-masonry-items{
         margin-top: -40px;
         margin-left: 0;
         margin-right: 0;
 
-        .works-col {
+        .works-col,
+        .certificates-col {
             padding: 40px 20px 0 20px;
             width: 33.333%;
             flex: 0 0 33.333%;
         }
 
-        .works-item {
+        .works-item,
+        .certificates-item {
             position: relative;
             padding: 30px;
             background: #fff;
@@ -282,7 +291,7 @@
                 }
 
                 .name {
-                    margin: 0;
+                    margin-bottom: 1rem;
 
                     a {
                         color: #000;
@@ -298,7 +307,8 @@
     }
 
     &.hide_category {
-        .works-item .desc .category {
+        .works-item .desc .category,
+        .certificates-item .desc .category{
             display: none;
         }
     }

@@ -42,10 +42,10 @@ tabs:
               display: Template
               localizable: true
           -
-            handle: url
+            handle: certificate_url
             field:
               type: link
-              display: URL
+              display: 'Certificate URL'
   sidebar:
     display: Sidebar
     sections:
@@ -57,3 +57,11 @@ tabs:
               type: slug
               localizable: true
               validate: 'max:200'
+          -
+            handle: certificate_categories
+            field:
+              taxonomies:
+                - certificate_categories
+              type: terms
+              display: 'Certificate Categories'
+              mode: select

@@ -1,0 +1,72 @@
+<!-- Section Started Heading -->
+<section class="section section-inner started-heading">
+    <div class="container">
+        <!-- Heading -->
+        <div class="m-titles align-center">
+            <h1 class="m-title splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
+                <span>{{ title }}</span>
+            </h1>
+            <div class="m-subtitle splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
+                <span>{{ subtitle }}</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Section - certificates -->
+<section class="lui-section">
+
+    <!-- certificates -->
+    <div class="v-line v-line-right v-line-top">
+        <div class="container">
+
+            <div class="certificates-box certificates-list">
+                <div class="filter-links scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <a href="#" class="lui-subtitle active" data-href=".certificates-col">All</a>
+                    {{ taxonomy:certificate_categories }}
+                    <a href="#" class="lui-subtitle" data-href=".{{ slug }}">{{ title }}</a>
+                    {{ /taxonomy:certificate_categories }}
+                </div>
+
+                <div class="certificates-items certificates-masonry-items row">
+                    {{ collection:certificates as="certificates" }}
+
+                        {{ if no_results }}
+                        <h4 class="text-center py-4">No Certifficates Yet</h4>
+                        {{ /if }}
+
+                        {{ certificates }}
+                        <div class="certificates-col col-xs-12 col-sm-12 col-md-12 col-lg-12 {{ certificate_categories }} {{ slug }} {{ /certificate_categories }}">
+                            <div class="certificates-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                                <div class="image">
+                                    <div class="img">
+                                        <a href="{{ certificate_url }}">
+                                            <img decoding="async" src="{{ thumbnail }}" alt="Explore"/>
+                                            <span class="overlay"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="desc">
+                                    <span class="category">{{ certificate_categories }}  <span class="tags">{{ title }}</span> {{ /certificate_categories }}</span>
+                                    <h5 class="name">
+                                        <a href="{{ certificate_url }}">{{ title }} - {{ year }}</a>
+                                    </h5>
+                                    <a href="{{ certificate_url }}" class="lnk">View Certificates</a>
+                                </div>
+                                <div class="bg-img" style="background-image: url(/images/pat-2.png)"></div>
+                            </div>
+                        </div>
+                        {{ /certificates }}
+                    {{ /collection:certificates }}
+                </div>
+            </div>
+
+            <div class="lui-bgtitle">
+                <span>Certificates</span>
+            </div>
+
+        </div>
+    </div>
+
+</section>
