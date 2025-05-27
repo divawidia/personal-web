@@ -9,6 +9,24 @@
         padding-left: 130px;
         margin-bottom: 40px;
 
+        &:hover {
+            .icon{
+                border: 2px solid variables.$active_color;
+                box-shadow: 5px 5px 0 0 variables.$active_color;
+                color: variables.$active_color;
+                transition: all 0.7s ease;
+
+                &:after {
+                    background: variables.$active_color;
+                    transition: all 0.7s ease;
+                }
+            }
+            .title {
+                color: variables.$active_color;
+                transition: all 0.7s ease;
+            }
+        }
+
         .icon {
             position: absolute;
             left: 0;
@@ -33,6 +51,8 @@
                 height: 2px;
                 background: variables.$dark_color;
             }
+
+
         }
 
         .title {

@@ -1,4 +1,4 @@
-/* Luique - Dark Skin Styles v1.0 */
+@use "abstracts/variables";
 
 /**
 * Base Styles
@@ -597,23 +597,47 @@ body.dark-skin {
 * Section Contacts
 **/
 
-.dark-skin .numbers-item .icon {
-    border: 2px solid #a3a5a7;
-    background-color: #1d222a;
-    box-shadow: 5px 5px 0px 0px rgb(255 255 255 / 10%);
-}
+.dark-skin {
+    .numbers-item {
+        .icon {
+            border: 2px solid #a3a5a7 !important;
+            background-color: #1d222a !important;
+            box-shadow: 5px 5px 0px 0px rgba(255, 255, 255, 0.1) !important;
 
-.dark-skin .numbers-item .icon:after {
-    background: #a3a5a7;
-}
+            &::after {
+                background: #a3a5a7;
+            }
+        }
 
-.dark-skin .numbers-item .title {
-    color: #fff;
-}
+        .title {
+            color: #fff !important;
+        }
 
-.dark-skin .contacts-form .bg-img {
-    filter: invert(1);
-    opacity: 0.6;
+        &:hover {
+            .icon{
+                border: 2px solid variables.$active_color !important;
+                box-shadow: 5px 5px 0 0 variables.$active_color !important;
+                color: variables.$active_color;
+                transition: all 0.7s ease;
+
+                &:after {
+                    background: variables.$active_color;
+                    transition: all 0.7s ease;
+                }
+            }
+            .title {
+                color: variables.$active_color !important;
+                transition: all 0.7s ease;
+            }
+        }
+    }
+
+    .contacts-form {
+        .bg-img {
+            filter: invert(1);
+            opacity: 0.6;
+        }
+    }
 }
 
 /**
