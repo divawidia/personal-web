@@ -233,6 +233,14 @@ import "splitting/dist/splitting-cells.css";
             return false;
         });
 
+        var $gal_container = $(".m-gallery");
+        $gal_container.imagesLoaded(function () {
+            $gal_container.isotope({
+                itemSelector: ".col-lg-6",
+                percentPosition: true,
+            });
+        });
+
 
         function filterItems(itemsClass, itemsCol, filterClass) {
             /*
