@@ -24,47 +24,42 @@
                         <a href="#" class="lui-subtitle" data-href=".{{ slug }}">{{ title }}</a>
                     {{ /taxonomy:certificate_categories }}
                 </div>
-
-                <div class="certificates-items certificates-masonry-items row">
-                    {{ collection:certificates as="certificates" where="featured:true" limit="6" }}
-
-                        {{ if no_results }}
-                            <h4 class="text-center py-4">No Certifficates Yet</h4>
-                        {{ /if }}
-
-                        {{ certificates }}
-                            <div class="certificates-col col-12 col-lg-4 {{ certificate_categories }} {{ slug }} {{ /certificate_categories }}">
-                                <div class="certificates-item scrolla-element-anim-1 scroll-animate" data-animate="active">
-                                    <div class="image">
-                                        <div class="img">
-                                            <a href="{{ certificate_url }}">
-                                                <img decoding="async" src="{{ thumbnail }}" alt="Explore"/>
-                                                <span class="overlay"></span>
-                                            </a>
+                {{ collection:certificates as="certificates" where="featured:true" limit="6" }}
+                    {{ if no_results }}
+                        <h4 class="text-center py-4">No Certifficates Yet</h4>
+                    {{ /if }}
+                        <div class="certificates-items certificates-masonry-items row">
+                            {{ certificates }}
+                                <div class="certificates-col col-12 col-lg-4 {{ certificate_categories }} {{ slug }} {{ /certificate_categories }}">
+                                    <div class="certificates-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                                        <div class="image">
+                                            <div class="img">
+                                                <a href="{{ certificate_url }}">
+                                                    <img decoding="async" src="{{ thumbnail }}" alt="Explore"/>
+                                                    <span class="overlay"></span>
+                                                </a>
+                                            </div>
                                         </div>
+                                        <div class="desc">
+                                            <span class="category">{{ certificate_categories }}  <span class="tags">{{ title }}</span> {{ /certificate_categories }}</span>
+                                            <h5 class="name">
+                                                <a href="{{ certificate_url }}">{{ title }} - {{ year }}</a>
+                                            </h5>
+                                            <a href="{{ certificate_url }}" class="lnk">View Certificates</a>
+                                        </div>
+                                        <div class="bg-img" style="background-image: url(/images/pat-2.png)"></div>
                                     </div>
-                                    <div class="desc">
-                                        <span class="category">{{ certificate_categories }}  <span class="tags">{{ title }}</span> {{ /certificate_categories }}</span>
-                                        <h5 class="name">
-                                            <a href="{{ certificate_url }}">{{ title }} - {{ year }}</a>
-                                        </h5>
-                                        <a href="{{ certificate_url }}" class="lnk">View Certificates</a>
-                                    </div>
-                                    <div class="bg-img" style="background-image: url(/images/pat-2.png)"></div>
                                 </div>
-                            </div>
-                        {{ /certificates }}
-
-                        {{ if certificates count=">6" }}
-                            <div class="load-more-link">
-                                <a href="{{ nav handle='navbar' }}/certificates" class="btn scrolla-element-anim-1 scroll-animate my-4" data-animate="active">
-                                    <span>View More</span>
-                                </a>
-                            </div>
-                        {{ /if }}
-                    {{ /collection:certificates }}
-                </div>
-
+                            {{ /certificates }}
+                        </div>
+                    {{ if certificates count=">6" }}
+                    <div class="load-more-link">
+                        <a href="{{ nav handle='navbar' }}/certificates" class="btn scrolla-element-anim-1 scroll-animate my-4" data-animate="active">
+                            <span>View More</span>
+                        </a>
+                    </div>
+                    {{ /if certificates }}
+                {{ /collection:certificates }}
             </div>
 
             <div class="lui-bgtitle">

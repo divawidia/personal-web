@@ -272,6 +272,10 @@ import "splitting/dist/splitting-cells.css";
             Filter skills items
         */
         filterItems(".skills-items", ".skills-col", ".skills-box .filter-links");
+        /*
+            Filter certificates items
+        */
+        filterItems(".certificates-items", ".certificates-col", ".certificates-box .filter-links");
 
 
         $(".has-popup-image").magnificPopup({
