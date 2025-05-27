@@ -2,28 +2,28 @@ tree:
   -
     id: 76530913-6bdd-4417-bd59-7103a8e89c83
     title: Home
-    url: 'http://personal-web.test/'
+    url: /
   -
     id: d072249e-d66e-4c57-aed5-a19da572426f
     title: Services
-    url: 'http://personal-web.test/#services-section'
+    url: '/#services-section'
   -
     id: 7780e24d-981b-4481-a853-30618d8804ee
     title: Skills
-    url: 'http://personal-web.test/#skills-section'
+    url: '/#skills-section'
   -
     id: 2729a948-6392-49f0-852c-207b3295e85e
     title: Portfolios
-    url: 'http://personal-web.test/portfolios'
+    url: /portfolios
   -
     id: 4efde6fe-006f-4cb7-a681-210caef979a1
     title: Resume
-    url: 'http://personal-web.test/#resume-section'
+    url: '/#resume-section'
   -
     id: f27b3c48-72eb-405f-86dc-6243384e2e24
     title: Certificates
-    url: 'http://personal-web.test/certificates'
+    url: /certificates
   -
     id: 8edb69f4-4a89-4087-a38d-6140f781950d
     title: Contact
-    url: 'http://personal-web.test/#contact-section'
+    url: '/#contact-section'
