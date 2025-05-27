@@ -143,17 +143,22 @@
         margin-bottom: 0;
     }
 
-    // Works
-    .works-box {
+    // Works & certificates
+    .works-box,
+    .certificates-box {
         margin-left: 0;
         margin-right: 0;
     }
 
-    .works-items {
-        &.works-list-items {
+    .works-items,
+    .certificates-items {
+
+        &.works-list-items,
+        &.certificates-list-item {
             margin-top: -60px;
 
-            .works-item {
+            .works-item,
+            .certificates-item {
                 margin-top: 60px;
 
                 .image {
@@ -166,8 +171,11 @@
             }
         }
 
-        &.works-masonry-items {
-            .works-col {
+        &.works-masonry-items,
+        &.certificates-masonry-items {
+
+            .works-col,
+            .certificates-col {
                 width: 50%;
                 flex: 0 0 50%;
             }
@@ -366,16 +374,19 @@
         margin: 0 10px 10px;
     }
 
-    .works-items.works-masonry-items {
+    .works-items.works-masonry-items,
+    .certificates-items.certificates-masonry-items {
         margin: 0 -10px;
 
-        .works-col {
+        .works-col,
+        .certificates-col {
             padding: 30px 10px 0;
             width: 100%;
             flex: 0 0 100%;
         }
 
-        .works-item {
+        .works-item,
+        .certificates-item {
             .desc {
                 opacity: 1;
                 bottom: 0;
@@ -391,8 +402,10 @@
         }
     }
 
-    .works-items.works-list-items {
-        .works-item {
+    .works-items.works-list-items,
+    .certificates-items.certificates-list-items {
+        .works-item,
+        .certificates-item {
             background: #fff;
             border-radius: 20px;
 
@@ -413,12 +426,18 @@
         }
     }
 
-    .works-item .image img {
-        height: 250px;
+    .works-item,
+    .certificates-item {
+        .image img {
+            height: 250px;
+        }
     }
 
-    .works-box.works-list .works-item .bg-img {
-        display: none;
+    .works-box.works-list .works-item,
+    .certificates-box.certificates-list .certificates-item {
+        .bg-img {
+            display: none;
+        }
     }
 
     // Work single
