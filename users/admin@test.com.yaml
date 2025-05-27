@@ -27,7 +27,7 @@ preferences:
         - full_name
         - subject
         - message
-  theme: light
+  theme: dark
   assets:
     assets:
       mode: grid
