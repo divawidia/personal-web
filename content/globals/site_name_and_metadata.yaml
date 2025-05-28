@@ -15,11 +15,11 @@ data:
     - Backend
     - UI/UX
     - Devops
-  canonical_url: 'http://personal-web.test/'
+  canonical_url: 'https://divawidia.my.id/'
   robots: index_follow
   open_graph_title: 'Diva Widia - Fullstack Developer'
   open_graph_description: "Discover Diva Widia's professional journey – a blend of creative design and technical expertise. Explore projects, skills, and accomplishments that drive success."
-  open_graph_url: 'http://personal-web.test/'
+  open_graph_url: 'https://divawidia.my.id/'
   twitter_title: 'Diva Widia - Fullstack Developer'
   twitter_description: "Discover Diva Widia's professional journey – a blend of creative design and technical expertise. Explore projects, skills, and accomplishments that drive success."
   twitter_card_type: summary_large_image

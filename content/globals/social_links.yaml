@@ -6,3 +6,13 @@ data:
       social_media_name: LinkedIn
       social_media_icon: 'fab fa-linkedin'
       social_media_url: 'https://www.linkedin.com/in/diva-widia-0aab48197/'
+    -
+      id: mb7v46r0
+      social_media_name: GitHub
+      social_media_icon: 'fab fa-github'
+      social_media_url: github.com/divawidia
+    -
+      id: mb7vwsnf
+      social_media_name: Telegram
+      social_media_icon: 'fab fa-telegram'
+      social_media_url: 'https://t.me/dipawidia'
