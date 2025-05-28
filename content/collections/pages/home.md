@@ -382,7 +382,7 @@ sections:
   -
     id: m8opklym
     heading_title: Certificates
-    heading_subtitle: 'my <b>Certificates</b>'
+    heading_subtitle: 'my <b>Accomplishments</b>'
     type: certificates_section
     enabled: true
   -
@@ -396,7 +396,7 @@ sections:
     type: contact_section
     enabled: true
 updated_by: 9777f40c-e866-44a6-a64b-1907a2ec929e
-updated_at: 1748235739
+updated_at: 1748402558
 ---
 ## Welcome to your brand new Statamic site!
 

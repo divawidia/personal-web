@@ -18,12 +18,6 @@
     <div class="v-line v-line-right">
         <div class="container">
             <div class="certificates-box">
-                <div class="filter-links scrolla-element-anim-1 scroll-animate" data-animate="active">
-                    <a href="#" class="lui-subtitle active" data-href=".certificates-col">All</a>
-                    {{ taxonomy:certificate_categories }}
-                        <a href="#" class="lui-subtitle" data-href=".{{ slug }}">{{ title }}</a>
-                    {{ /taxonomy:certificate_categories }}
-                </div>
                 {{ collection:certificates as="certificates" where="featured:true" limit="6" }}
                     {{ if no_results }}
                         <h4 class="text-center py-4">No Certifficates Yet</h4>
