@@ -17,7 +17,7 @@ sections:
       -
         id: m8nw2cq7
         role_name: 'UI/UX Designer'
-    summary: 'Passionate and Detail-oriented full-stack developer with more than 1 year of hands-on experience in designing, developing, deploying, and maintaining responsive websites. Proficient in PHP, Python, SQL, Javascript, and website frameworks such as Laravel, Vue, and Flask. Passionate about learning and staying updated with the latest app technologies, develop my skills and grow profesionally, committed to delivering high-quality projects on time.'
+    summary: 'Passionate full-stack website developer with more than a year of hands-on experience in designing, developing, deploying, and maintaining responsive websites. Proficient in PHP, Python, SQL, Javascript, and website frameworks such as Laravel, Vue, and Flask. Passionate about learning and staying updated with the latest app technologies, develop my skills and grow profesionally, committed to delivering high-quality projects on time.'
     button_text: 'Download CV'
     button_url: 'https://drive.google.com/file/d/1mHj86ZnEb0g8Kqa4kK-5syoc3M46BNfZ/view?usp=drive_link'
     profile_picture: profile2.png
@@ -348,35 +348,71 @@ sections:
     educations:
       -
         id: m8opebw3
-        school_name: 'Lorem ipsum dolor'
+        school_name: 'University of Udayana'
         location: 'Bali, Indonesia'
-        major: 'Backend Programming'
-        start_date: '2025-01-01'
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        major: 'Bachelor of Engineering in Information Technology'
+        start_date: '2019-07-01'
+        description: |-
+          •	GPA: 3.83/4.0 (Achieved GPA of 4.0 out of 4.0 for last 4 consecutive  semesters)
+          •	Actively involved in student organizations and technical communities: Kelompok Studi Technology Artisan, and Himpunan Mahasiswa Teknologi Informasi (HMTI)
+          •	Gained foundational and practical skills in software development, data science, algorithms, databases, and systems analysis
+        end_date: '2023-07-28'
       -
         id: m8opgxkn
-        school_name: 'Lorem ipsum dolor'
-        location: 'Bali, Indonesia'
-        major: 'Backend Programming'
-        start_date: '2025-02-01'
-        end_date: '2025-03-26'
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        school_name: 'Generasi Gigih 2.0 By YABB & GoTo'
+        location: 'Jakarta, Indonesia (Remote)'
+        major: 'Backend Engineering'
+        start_date: '2022-02-01'
+        end_date: '2022-07-26'
+        description: |-
+          •	Selected in the top 5% as 1 of 1,100 participants out of more than 20,000 applicants across Indonesia.
+          •	Gained hands-on experience using Ruby and Ruby on Rails to build backend web applications, Object-Oriented Programming (OOP), SOLID principles, Test-Driven Development (TDD), Relational Databases, RESTful APIs, clean and maintainable code following industry best practices.
+          •	Completed team and individual projects that simulate real-world backend challenges and collaboration scenarios and received personalized mentorship from industry engineers and completed the program with strong technical and soft skills.
     experiences:
       -
         id: m8ophgke
-        place: 'Lorem ipsum dolor'
+        place: 'Freelance Web Developer'
         location: 'Bali, Indonesia'
-        role: 'Soft Tech Inc.'
-        start_date: '2024-10-01'
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        role: 'Fullstack Web Developer'
+        start_date: '2024-07-01'
+        description: |-
+          •	Developed and launched a Laravel-based car rental and travel booking system with real-time availability and booking logic to enhance booking process and operational efficiency by implemented booking management system and reducing manual workload for staff.
+          •	Built a full-featured academy and learning management system with student databases, payment tracking, leaderboards, and training modules, reducing manual admin workload by over 50% Derived from client feedback and time tracking: tasks like payment recording, student reporting, and training schedule management were automated, cutting hours spent by admin staff.
+          •	Implemented CI/CD pipelines using GitHub Actions for Laravel projects, automating deployments to VPS and cutting release time by 80% Measured by comparing manual FTP deployment (~30 mins with errors) versus automated CI/CD via GitHub Actions (~5–6 mins per deployment).
+          •	Integrated Midtrans payment gateway, enabling automated and secure online transactions, leading to 100% shift to cashless payments for client operations.
+          •	Reduced system response times by 35% through database query optimization, queue workers, and Laravel caching, Benchmarked using Laravel Telescope and browser dev tools (network tab) before and after optimization; confirmed through GTmetrix/Lighthouse reports.
+          •	Configured and managed VPS deployments (Ubuntu, Nginx/Caddy, or Control Panel), ensuring 99.9% uptime Verified through VPS provider uptime logs over a 6-month period. and secure SSL with Let’s Encrypt.
+          •	Set up Dockerized environments for Laravel apps, streamlining development-to-production flow.
+          •	Monitored and troubleshot deployments using GitHub Actions, logs, and health checks, reducing post-deployment issues.
+          •	Led full-cycle development for several projects, from requirement gathering and UI/UX prototyping (Figma) to backend development, launch, and ongoing support.
+          •	Maintained 100% on-time delivery record across all freelance projects, with 90%+ client satisfaction Based on client feedback, delivery timelines, and repeat project requests.
       -
         id: m8opk4l2
-        place: 'Lorem ipsum dolor'
+        place: 'Rhapsody Hospitality Development Center'
         location: 'Bali, Indonesia'
-        role: 'Kana Design Studio'
-        start_date: '2024-11-01'
-        end_date: '2025-03-26'
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        role: 'Web Developer'
+        start_date: '2023-07-01'
+        end_date: '2024-07-01'
+        description: |-
+          •	Enhanced user-enggagement by over 70%, as measured by session duration and interaction rates, by designing, and developing a responsive, and user-friendly company profile website into clean, organized HTML, CSS with Bootstrap framework, Vanilla Javascript. 
+          •	Successfully developed and deployed a fully functional custom CMS and School Management System website using Laravel, ensuring scalability, high performance, enhanced user-enggagement and user-friendly, and meeting company’s requirements. 
+          •	Improved company’s database storage and retrieval process more efficient by architected efficient database schemas design and Eloquent ORM models in MySQL according to company needs and business processes. 
+          •	Streamlined administrative processes through automation and reducing manual workload for school staff by over 50% Derived from staff/user feedback and time tracking, by developed a fully functional school management system with Laravel, Bootstrap, Javascript and JQuery. 
+          •	Enhanced marketing team research process by by implemented web scraper with Python and Selenium to retrieve hospitality and tourism article content from various sites for research and content creation purpose. 
+          •	Implemented CI/CD pipeline using Github Actions for automating deployment process to a VPS and ensuring smooth and reliable updates.
+      -
+        id: mb7ofwuz
+        place: 'CV Nawatama'
+        location: 'Bali, Indonesia'
+        role: 'Data Warehouse Engineer (Internship)'
+        start_date: '2022-08-01'
+        end_date: '2022-12-15'
+        description: |-
+          •	Managed and processed sales and purchase data of a minimarket using Pentaho and Power BI.
+          •	Developed Extract, Transform, Load (ETL) pipelines to clean and integrate data from multiple sources.
+          •	Analyzed sales and purchase trends to provide deeper business insights.
+          •	Created interactive dashboards in Power BI for informative data visualizations for management.
+          •	Optimized queries and data warehouse structure to improve data analysis efficiency.
     type: resume_section
     enabled: true
   -
@@ -396,7 +432,7 @@ sections:
     type: contact_section
     enabled: true
 updated_by: 9777f40c-e866-44a6-a64b-1907a2ec929e
-updated_at: 1748402558
+updated_at: 1748420644
 ---
 ## Welcome to your brand new Statamic site!
 
