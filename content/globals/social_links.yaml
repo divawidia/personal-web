@@ -10,7 +10,7 @@ data:
       id: mb7v46r0
       social_media_name: GitHub
       social_media_icon: 'fab fa-github'
-      social_media_url: github.com/divawidia
+      social_media_url: 'https://github.com/divawidia'
     -
       id: mb7vwsnf
       social_media_name: Telegram

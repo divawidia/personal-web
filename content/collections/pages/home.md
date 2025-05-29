@@ -17,7 +17,7 @@ sections:
       -
         id: m8nw2cq7
         role_name: 'UI/UX Designer'
-    summary: 'Passionate full-stack website developer with more than a year of hands-on experience in designing, developing, deploying, and maintaining responsive websites. Proficient in PHP, Python, SQL, Javascript, and website frameworks such as Laravel, Vue, and Flask. Passionate about learning and staying updated with the latest app technologies, develop my skills and grow profesionally, committed to delivering high-quality projects on time.'
+    summary: 'Passionate and detail oriented full-stack website developer with more than a year of hands-on experience in designing, developing, deploying, and maintaining responsive websites. Proficient in PHP, Python, SQL, JavaScript, Ruby, and website frameworks such as Laravel, Ruby on Rails, Vue.js, and Flask. Passionate about learning and staying updated with the latest app technologies, develop my skills and grow professionally, committed to delivering high-quality projects on time.'
     button_text: 'Download CV'
     button_url: 'https://drive.google.com/file/d/1mHj86ZnEb0g8Kqa4kK-5syoc3M46BNfZ/view?usp=drive_link'
     profile_picture: profile2.png
@@ -344,7 +344,7 @@ sections:
   -
     id: m8op6fop
     heading_title: Resume
-    heading_subtitle: 'my <b>Story</b>'
+    heading_subtitle: 'my <b>Experiences</b>'
     educations:
       -
         id: m8opebw3
@@ -365,7 +365,7 @@ sections:
         start_date: '2022-02-01'
         end_date: '2022-07-26'
         description: |-
-          •	Selected in the top 5% as 1 of 1,100 participants out of more than 20,000 applicants across Indonesia.
+          •	Selected among the top 5%, as 1 of 1,100 participants out of more than 20,000 applicants across Indonesia.
           •	Gained hands-on experience using Ruby and Ruby on Rails to build backend web applications, Object-Oriented Programming (OOP), SOLID principles, Test-Driven Development (TDD), Relational Databases, RESTful APIs, clean and maintainable code following industry best practices.
           •	Completed team and individual projects that simulate real-world backend challenges and collaboration scenarios and received personalized mentorship from industry engineers and completed the program with strong technical and soft skills.
     experiences:
@@ -424,7 +424,7 @@ sections:
   -
     id: m8oplk77
     heading_title: 'Contact Me'
-    heading_subtitle: 'Let’s <b>Talk About Ideas</b>'
+    heading_subtitle: 'Let’s <b>Collaborate</b>'
     address: 'Bali, Indonesia'
     freelance_status: 'Available Right Now'
     email: divaiwidawiartha@gmail.com
@@ -432,7 +432,7 @@ sections:
     type: contact_section
     enabled: true
 updated_by: 9777f40c-e866-44a6-a64b-1907a2ec929e
-updated_at: 1748420644
+updated_at: 1748488470
 ---
 ## Welcome to your brand new Statamic site!
 
