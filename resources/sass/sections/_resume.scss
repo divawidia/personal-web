@@ -1,4 +1,5 @@
 @use "../abstracts/variables";
+@use "../abstracts/mixins";
 
 .skills-items {
     position: relative;
@@ -6,24 +7,19 @@
 }
 .skills-item {
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     padding: 20px;
     background: #fff;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
 
-    &:hover{
-        transform: translate(-10px, -10px);
-        border: 2px solid variables.$active_color;
-        box-shadow: 15px 15px 30px -15px variables.$active_color;
-        transition: all 0.7s ease;
-    }
+    @include mixins.card-hover();
 
     img {
         max-width: 100%;
         max-height: 50px;
+        align-self: center;
     }
 
     &:first-child {
@@ -33,6 +29,7 @@
         margin: 20px 30px 0 30px;
         line-height: 20px;
         text-align: center;
+        align-self: center;
     }
     .text {
         margin: 0 30px 30px 30px;
