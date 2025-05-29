@@ -508,8 +508,6 @@ body.dark-skin {
     .certificates-items {
         &.works-list-items {
             .works-item {
-                background: #1d222a;
-
                 .desc {
                     .name {
                         color: #fff;
@@ -518,6 +516,9 @@ body.dark-skin {
                             color: #fff;
                         }
                     }
+                }
+                @media screen and (max-width: 767px) {
+                    background: #1d222a;
                 }
             }
         }

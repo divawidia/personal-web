@@ -1,4 +1,5 @@
 @use "../abstracts/variables";
+@use "../abstracts/mixins";
 
 .works-box,
 .certificates-box {
@@ -241,10 +242,11 @@
 
         .works-item,
         .certificates-item {
-            position: relative;
             padding: 30px;
             background: #fff;
             border-radius: 20px;
+
+            @include mixins.card-hover();
 
             .image {
                 position: relative;
@@ -267,13 +269,6 @@
                 .overlay {
                     display: none;
                 }
-            }
-
-            &:hover{
-                transform: translate(-10px, -10px);
-                border: 2px solid variables.$active_color;
-                box-shadow: 15px 15px 30px -15px variables.$active_color;
-                transition: all 0.7s ease;
             }
 
             .desc {
