@@ -17,7 +17,7 @@ sections:
       -
         id: m8nw2cq7
         role_name: 'UI/UX Designer'
-    summary: 'Passionate and detail oriented full-stack website developer with more than a year of hands-on experience in designing, developing, deploying, and maintaining responsive websites. Proficient in PHP, Python, SQL, JavaScript, Ruby, and website frameworks such as Laravel, Ruby on Rails, Vue.js, and Flask. Passionate about learning and staying updated with the latest app technologies, develop my skills and grow professionally, committed to delivering high-quality projects on time.'
+    summary: 'Passionate full-stack website developer with more than a year of hands-on experience in designing, developing, deploying, and maintaining responsive websites. Proficient in PHP, Python, SQL, JavaScript, Ruby, and website frameworks such as Laravel, Ruby on Rails, Vue.js, and Flask. Passionate about learning and staying updated with the latest app technologies, develop my skills and grow professionally, committed to delivering high-quality projects on time.'
     button_text: 'Download CV'
     button_url: '#'
     profile_picture: profile2.png
@@ -25,7 +25,7 @@ sections:
     enabled: true
     first_name: Diva
     last_name: Widia
-    role: 'Fullstack Developer'
+    role: 'Full-stack Developer'
     social_links:
       -
         id: m8nxqsc0
@@ -354,7 +354,7 @@ sections:
         start_date: '2019-07-01'
         description: |-
           •	GPA: 3.83/4.0 (Achieved GPA of 4.0 out of 4.0 for last 4 consecutive  semesters)
-          •	Actively involved in student organizations and technical communities: Kelompok Studi Technology Artisan, and Himpunan Mahasiswa Teknologi Informasi (HMTI)
+          •	Actively involved in student organizations and technical communities: Kelompok Studi Technology Artisan (TecArt), Komisi Pemilu Raya Mahasiswa PM (KPRM PM) and Himpunan Mahasiswa Teknologi Informasi (HMTI)
           •	Gained foundational and practical skills in software development, data science, algorithms, databases, and systems analysis
         end_date: '2023-07-28'
       -
@@ -384,7 +384,7 @@ sections:
           •	Configured and managed VPS deployments (Ubuntu, Nginx/Caddy, or Control Panel), ensuring 99.9% uptime Verified through VPS provider uptime logs over a 6-month period. and secure SSL with Let’s Encrypt.
           •	Set up Dockerized environments for Laravel apps, streamlining development-to-production flow.
           •	Monitored and troubleshot deployments using GitHub Actions, logs, and health checks, reducing post-deployment issues.
-          •	Led full-cycle development for several projects, from requirement gathering and UI/UX prototyping (Figma) to backend development, launch, and ongoing support.
+          •	Conducted full-cycle development for several projects, from requirement gathering and UI/UX prototyping (Figma) to backend development, launch, and ongoing support.
           •	Maintained 100% on-time delivery record across all freelance projects, with 90%+ client satisfaction Based on client feedback, delivery timelines, and repeat project requests.
       -
         id: m8opk4l2
@@ -432,7 +432,7 @@ sections:
     type: contact_section
     enabled: true
 updated_by: 9777f40c-e866-44a6-a64b-1907a2ec929e
-updated_at: 1748932040
+updated_at: 1749090733
 ---
 ## Welcome to your brand new Statamic site!
 
