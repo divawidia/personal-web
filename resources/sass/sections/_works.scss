@@ -174,7 +174,6 @@
 
 .works-items,
 .certificates-items {
-
     &.works-list-items,
     &.certificates-list-items {
         margin-top: -100px;
@@ -228,7 +227,7 @@
     }
 
     &.works-masonry-items,
-    &.certificates-masonry-items{
+    &.certificates-masonry-items {
         margin-top: -40px;
         margin-left: 0;
         margin-right: 0;
@@ -303,7 +302,7 @@
 
     &.hide_category {
         .works-item .desc .category,
-        .certificates-item .desc .category{
+        .certificates-item .desc .category {
             display: none;
         }
     }
