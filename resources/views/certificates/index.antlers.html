@@ -3,34 +3,39 @@
     <div class="container">
         <!-- Heading -->
         <div class="m-titles align-center">
-            <h1 class="m-title splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
+            <h1
+                class="m-title splitting-text-anim-1 scroll-animate"
+                data-splitting="words"
+                data-animate="active"
+            >
                 <span>{{ title }}</span>
             </h1>
-            <div class="m-subtitle splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
+            <div
+                class="m-subtitle splitting-text-anim-1 scroll-animate"
+                data-splitting="words"
+                data-animate="active"
+            >
                 <span>{{ subtitle }}</span>
             </div>
         </div>
-
     </div>
 </section>
 
 <!-- Section - certificates -->
 <section class="lui-section">
-
     <!-- certificates -->
     <div class="v-line v-line-right v-line-top">
         <div class="container">
-
             <div class="certificates-box certificates-list">
                 <div class="filter-links scrolla-element-anim-1 scroll-animate" data-animate="active">
                     <a href="#" class="lui-subtitle active" data-href=".certificates-col">All</a>
                     {{ taxonomy:certificate_categories }}
-                    <a href="#" class="lui-subtitle" data-href=".{{ slug }}">{{ title }}</a>
+                        <a href="#" class="lui-subtitle" data-href=".{{ slug }}">{{ title }}</a>
                     {{ /taxonomy:certificate_categories }}
                 </div>
 
-                <div class="certificates-items certificates-masonry-items row">
-                    {{ collection:certificates as="certificates" }}
+                {{ collection:certificates as="certificates"}}
+                    <div class="certificates-items certificates-masonry-items row">
 
                         {{ if no_results }}
                         <h4 class="text-center py-4">No Certifficates Yet</h4>
@@ -48,7 +53,11 @@
                                     </div>
                                 </div>
                                 <div class="desc">
-                                    <span class="category">{{ certificate_categories }}  <span class="tags">{{ title }}</span> {{ /certificate_categories }}</span>
+                                    <span class="category">
+                                        {{ certificate_categories }}
+                                            <span class="tags">{{ title }}</span>
+                                        {{/certificate_categories }}
+                                    </span>
                                     <h5 class="name">
                                         <a href="{{ certificate_url }}">{{ title }} - {{ year }}</a>
                                     </h5>
@@ -58,15 +67,15 @@
                             </div>
                         </div>
                         {{ /certificates }}
-                    {{ /collection:certificates }}
-                </div>
+
+                    </div>
+                {{ /collection:certificates }}
+
             </div>
 
             <div class="lui-bgtitle">
                 <span>Certificates</span>
             </div>
-
         </div>
     </div>
-
 </section>

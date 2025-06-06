@@ -28,6 +28,3 @@ preferences:
         - subject
         - message
   theme: dark
-  assets:
-    assets:
-      mode: grid
