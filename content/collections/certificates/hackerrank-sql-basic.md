@@ -8,5 +8,5 @@ certificate_url: 'https://www.hackerrank.com/certificates/d64300fb3fec'
 certificate_categories:
   - sql
 updated_by: 9777f40c-e866-44a6-a64b-1907a2ec929e
-updated_at: 1748330245
+updated_at: 1749189343
 ---

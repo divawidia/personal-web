@@ -11,5 +11,5 @@ certificate_categories:
   - sql
   - data-management
 updated_by: 9777f40c-e866-44a6-a64b-1907a2ec929e
-updated_at: 1748292993
+updated_at: 1749188977
 ---

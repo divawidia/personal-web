@@ -8,5 +8,5 @@ certificate_url: 'https://www.dicoding.com/certificates/JLX1LLGEGX72'
 certificate_categories:
   - python
 updated_by: 9777f40c-e866-44a6-a64b-1907a2ec929e
-updated_at: 1748320986
+updated_at: 1749189688
 ---

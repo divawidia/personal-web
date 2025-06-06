@@ -16,5 +16,5 @@ certificate_categories:
   - soft-skills
   - algorithm-data-structure
 updated_by: 9777f40c-e866-44a6-a64b-1907a2ec929e
-updated_at: 1749092254
+updated_at: 1749189356
 ---

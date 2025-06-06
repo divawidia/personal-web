@@ -8,5 +8,5 @@ certificate_url: 'https://www.hackerrank.com/certificates/a3ee93eeff5e'
 certificate_categories:
   - python
 updated_by: 9777f40c-e866-44a6-a64b-1907a2ec929e
-updated_at: 1748330381
+updated_at: 1749189305
 ---

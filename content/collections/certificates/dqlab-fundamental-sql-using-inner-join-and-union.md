@@ -8,5 +8,5 @@ certificate_url: 'https://academy.dqlab.id/Certificate_check/result/DQLABSQLT2ED
 certificate_categories:
   - sql
 updated_by: 9777f40c-e866-44a6-a64b-1907a2ec929e
-updated_at: 1748328798
+updated_at: 1749189877
 ---

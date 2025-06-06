@@ -8,5 +8,5 @@ certificate_url: 'https://digitalent.kominfo.go.id/cek-sertifikat?registrasi=149
 certificate_categories:
   - data-engineer
 updated_by: 9777f40c-e866-44a6-a64b-1907a2ec929e
-updated_at: 1749091605
+updated_at: 1749188665
 ---

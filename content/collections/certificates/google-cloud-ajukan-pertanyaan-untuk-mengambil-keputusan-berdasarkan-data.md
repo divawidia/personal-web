@@ -11,5 +11,5 @@ certificate_categories:
   - data-visualization
   - big-data
 updated_by: 9777f40c-e866-44a6-a64b-1907a2ec929e
-updated_at: 1748252494
+updated_at: 1749189041
 ---

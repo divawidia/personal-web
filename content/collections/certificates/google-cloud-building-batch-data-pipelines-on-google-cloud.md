@@ -10,5 +10,5 @@ certificate_categories:
   - big-data
   - cloud-computing
 updated_by: 9777f40c-e866-44a6-a64b-1907a2ec929e
-updated_at: 1748294169
+updated_at: 1749189241
 ---
