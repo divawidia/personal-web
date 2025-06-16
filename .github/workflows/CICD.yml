@@ -88,7 +88,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           port: 22
           script: |
-            cd /var/www/personal-web || exit 1
+            cd var/www/personal-web || exit 1
             docker compose pull
             docker compose down
             docker compose up -d --build
