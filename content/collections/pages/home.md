@@ -17,7 +17,7 @@ sections:
       -
         id: m8nw2cq7
         role_name: 'UI/UX Designer'
-    summary: 'Passionate full-stack website developer with more than a year of hands-on experience in designing, developing, deploying, and maintaining responsive websites. Proficient in PHP, Python, SQL, JavaScript, Ruby, and website frameworks such as Laravel, Ruby on Rails, Vue.js, and Flask. Passionate about learning and staying updated with the latest app technologies, develop my skills and grow professionally, committed to delivering high-quality projects on time.'
+    summary: 'Growth-driven Full Stack Developer with 1+ year of hands-on experience in designing, developing, deploying, and maintaining responsive websites. Proficient in PHP, Python, SQL, JavaScript, Ruby, and frameworks including Laravel, Ruby on Rails, Vue.js, and Flask. Committed to delivering high-quality projects on time with a focus on clean code and performance, and contribute to agile and innovative teams, innovative projects, expand skills in modern web development, and deliver solutions that drive business value. .'
     button_text: 'Download CV'
     button_url: 'https://drive.google.com/file/d/1SPo0djkvi-2kTUNY_MDr0mb8S4Roz3du/view?usp=drive_link'
     profile_picture: profile2.png
@@ -434,7 +434,7 @@ sections:
     type: contact_section
     enabled: true
 updated_by: 9777f40c-e866-44a6-a64b-1907a2ec929e
-updated_at: 1750649133
+updated_at: 1750649281
 ---
 ## Welcome to your brand new Statamic site!
 
