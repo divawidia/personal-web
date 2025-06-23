@@ -19,7 +19,7 @@ sections:
         role_name: 'UI/UX Designer'
     summary: 'Passionate full-stack website developer with more than a year of hands-on experience in designing, developing, deploying, and maintaining responsive websites. Proficient in PHP, Python, SQL, JavaScript, Ruby, and website frameworks such as Laravel, Ruby on Rails, Vue.js, and Flask. Passionate about learning and staying updated with the latest app technologies, develop my skills and grow professionally, committed to delivering high-quality projects on time.'
     button_text: 'Download CV'
-    button_url: 'https://drive.google.com/file/d/10_HfHXzkyyWzwb94PbSgqeSq9Tp7WuK8/view?usp=drive_link'
+    button_url: 'https://drive.google.com/file/d/1SPo0djkvi-2kTUNY_MDr0mb8S4Roz3du/view?usp=drive_link'
     profile_picture: profile2.png
     type: hero_section
     enabled: true
@@ -367,7 +367,8 @@ sections:
         description: |-
           •	Selected among the top 5%, as 1 of 1,100 participants out of more than 20,000 applicants across Indonesia.
           •	Gained hands-on experience using Ruby and Ruby on Rails to build backend web applications, Object-Oriented Programming (OOP), SOLID principles, Test-Driven Development (TDD), Relational Databases, RESTful APIs, clean and maintainable code following industry best practices.
-          •	Completed team and individual projects that simulate real-world backend challenges and collaboration scenarios and received personalized mentorship from industry engineers and completed the program with strong technical and soft skills.
+          •	Completed team and individual projects that simulate real-world backend challenges and collaboration scenarios
+          •	received personalized mentorship from industry engineers and completed the program with strong technical and soft skills.
     experiences:
       -
         id: m8ophgke
@@ -376,8 +377,9 @@ sections:
         role: 'Fullstack Web Developer'
         start_date: '2024-07-01'
         description: |-
-          •	Developed and launched a Laravel-based car rental and travel booking system with real-time availability and booking logic to enhance booking process and operational efficiency by implemented booking management system and reducing manual workload for staff.
-          •	Built a full-featured academy and learning management system with student databases, payment tracking, leaderboards, and training modules, reducing manual admin workload by over 50% Derived from client feedback and time tracking: tasks like payment recording, student reporting, and training schedule management were automated, cutting hours spent by admin staff.
+          •	Developed and launched a Laravel-based vehicle rental booking system with real-time availability and booking logic, reducing manual workload through booking management system.
+          •	Designed modern UI/UX for travel agency websites, including car rental, airport transport, and travel package booking platforms — resulting in improved user experience and increased conversion rates (based on client feedback).
+          •	Developed full-featured academy & Learning Management System (LMS) with student, coach databases, training & match scheduling, payment tracking, leaderboards, and training modules; reduced admin workload by 50%+ through automation of reporting and schedule management.
           •	Implemented CI/CD pipelines using GitHub Actions for Laravel projects, automating deployments to VPS and cutting release time by 80% Measured by comparing manual FTP deployment (~30 mins with errors) versus automated CI/CD via GitHub Actions (~5–6 mins per deployment).
           •	Integrated Midtrans payment gateway, enabling automated and secure online transactions, leading to 100% shift to cashless payments for client operations.
           •	Reduced system response times by 35% through database query optimization, queue workers, and Laravel caching, Benchmarked using Laravel Telescope and browser dev tools (network tab) before and after optimization; confirmed through GTmetrix/Lighthouse reports.
@@ -394,12 +396,12 @@ sections:
         start_date: '2023-07-01'
         end_date: '2024-07-01'
         description: |-
-          •	Enhanced user-enggagement by over 70%, as measured by session duration and interaction rates, by designing, and developing a responsive, and user-friendly company profile website into clean, organized HTML, CSS with Bootstrap framework, Vanilla Javascript. 
-          •	Successfully developed and deployed a fully functional custom CMS and School Management System website using Laravel, ensuring scalability, high performance, enhanced user-enggagement and user-friendly, and meeting company’s requirements. 
-          •	Improved company’s database storage and retrieval process more efficient by architected efficient database schemas design and Eloquent ORM models in MySQL according to company needs and business processes. 
-          •	Streamlined administrative processes through automation and reducing manual workload for school staff by over 50% Derived from staff/user feedback and time tracking, by developed a fully functional school management system with Laravel, Bootstrap, Javascript and JQuery. 
-          •	Enhanced marketing team research process by by implemented web scraper with Python and Selenium to retrieve hospitality and tourism article content from various sites for research and content creation purpose. 
-          •	Implemented CI/CD pipeline using Github Actions for automating deployment process to a VPS and ensuring smooth and reliable updates.
+          •	Enhanced company online exposure and user engagements by 99%, as measured by session duration and interaction rates, through designing and developing a responsive company profile website using Bootstrap, JavaScript and jQuery.
+          •	Developed and deployed custom CMS and School Management System with Laravel, improving usability, performance, and administrative workflows.
+          •	Designed optimized database schemas and Eloquent ORM models in MySQL, streamlining data storage and retrieval based on company business processes.
+          •	Automated key school administrative processes with Laravel, Bootstrap, JavaScript, and jQuery; reduced manual workload for staff by 50%+.
+          •	Implemented a web scraper using Python & Selenium to assist marketing team in retrieving relevant hospitality/tourism content for research & marketing campaign.
+          •	Set up CI/CD pipeline with GitHub Actions to automate deployments and ensure smooth, reliable updates to production VPS
       -
         id: mb7ofwuz
         place: 'CV Nawatama'
@@ -432,7 +434,7 @@ sections:
     type: contact_section
     enabled: true
 updated_by: 9777f40c-e866-44a6-a64b-1907a2ec929e
-updated_at: 1750059454
+updated_at: 1750649133
 ---
 ## Welcome to your brand new Statamic site!
 
